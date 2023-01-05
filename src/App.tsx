@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import HeaderRestaurant from './components/headerRestaurant/HeaderRestaurant';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello!</h1>
+      <HeaderRestaurant />
     </div>
   );
 }
