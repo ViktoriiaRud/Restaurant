@@ -9,4 +9,23 @@ export const Theme = {
     fontSide60: '60px',
     fontSide30: '30px',
     fontSide100: '100px',
-} 
+    wrapper: '1100px',
+    wrapperXl: '1440px,',
+    color: {
+        transparent: 'transparent',
+        grey: '#40464F',
+        white: '#FFFFFF',
+        yellow: '#E1B168',
+        grey2: '#797E89',
+        black: '#292E36',
+    },
+    gap: {
+        xxs: '4px',
+        xs: '8px',
+        sm: '16px',
+        md: '32px',
+        lg: '64px',
+        xl: '72px',
+        xxl: '128px',
+    },
+}; 
