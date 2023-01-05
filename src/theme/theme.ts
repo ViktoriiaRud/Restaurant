@@ -1,4 +1,4 @@
-export const Theme = {
+export const theme = {
     font1: 'Josefin Sans',
     font2: 'Cormorant Infant',
     fontSide15: '15px',

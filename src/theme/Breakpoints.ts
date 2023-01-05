@@ -1,4 +1,9 @@
-const size = {
+export type Breakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+
+export type SizeType = Record<Breakpoints, string>;
+export type BreakpointType = Record<Breakpoints, string>;
+
+const size: SizeType = {
   xs: '360px',
   sm: '576px',
   md: '768px',
@@ -7,7 +12,7 @@ const size = {
   xxl: '1920px',
 };
 
-export const breakpoint = {
+const breakpoint: BreakpointType = {
   xs: `@media (min-width: ${size.xs})`,
   sm: `@media (min-width: ${size.sm})`,
   md: `@media (min-width: ${size.md})`,
