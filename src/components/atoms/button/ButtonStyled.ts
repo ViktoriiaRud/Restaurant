@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { theme } from './../../../theme/theme';
+import { Breakpoints } from "../../../theme/Breakpoints";
+
 
 export const Button = styled.button`
     margin-top: 50px;
@@ -21,6 +23,11 @@ export const Button = styled.button`
     text-align: center;
     letter-spacing: 0.44px;
     color: #FFFFFF;
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-5px);
+        background-color: #CD853F;
+        }
 `;
 
 export const ButtonOrange = styled(Button)`
