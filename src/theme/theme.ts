@@ -16,7 +16,7 @@ export const theme = {
         grey: '#40464F',
         white: '#FFFFFF',
         yellow: '#E1B168',
-        grey2: '#797E89',
+        lightgrey: '#797E89',
         black: '#292E36',
     },
     gap: {
