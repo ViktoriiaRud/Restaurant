@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Breakpoints } from '../../theme/breakpoints';
 
 export const WrapperLogo = styled.section`
   	background-color: #40464F;

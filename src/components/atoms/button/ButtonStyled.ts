@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { theme } from './../../../theme/theme';
-import { Breakpoints } from "../../../theme/Breakpoints";
+import { Breakpoints } from '../../../theme/breakpoints';
 
 
 export const Button = styled.button`
