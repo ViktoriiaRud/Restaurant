@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { Breakpoints } from '../../theme/breakpoints';
 
+
 export const WrapperBanner = styled.section`
   	background-color: #40464F;
 `;
 
 export const WrapperLogo = styled.div`
-	padding: 50px 40px;
+	padding: 20px 30px;
 	max-width: 1360px;
 	max-height: 188px;
 	display: flex;

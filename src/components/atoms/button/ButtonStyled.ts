@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from './../../../theme/theme';
 import { Breakpoints } from '../../../theme/breakpoints';
 
 
