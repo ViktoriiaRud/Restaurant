@@ -79,5 +79,28 @@ export const Link = styled.ul`
 `;
 
 
+export const WrapperWelcom = styled.div`
+	margin: 10px 45px 10px 10px;
+	max-width: 1440px;
+	max-height: 810px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px; 
+
+	h1{ 
+		margin-top: 150px;
+		font-family: 'Cormorant Infant';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 100px;
+		line-height: 110px;
+		letter-spacing: 0.2px;
+		color: #FFFFFF;
+	}
+`;
+
+
+
 
 

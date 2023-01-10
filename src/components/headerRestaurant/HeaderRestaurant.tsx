@@ -1,8 +1,9 @@
 import React from "react";
 import headerRestaurant from './HeaderRestaurantData';
-import { WrapperLogo, Logo, WrapperBanner, Span } from "./HeaderRestaurantStyles";
+import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcom } from "./HeaderRestaurantStyles";
 import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, LinkWhite, Link } from './HeaderRestaurantStyles';
 import { Button, ButtonOrange } from '../atoms/button/ButtonStyled';
+import ImgFrame from '../../assets/img/Framer.png';
 import GlobalStyle from "../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from '../../theme/theme';
@@ -39,9 +40,14 @@ const HeaderRestaurant = () => {
                         ))}
                     </WrapperSocial>
                 </WrapperLinkSocial>
+
+                <WrapperWelcom>
+                    <h1>{headerRestaurant.title}</h1>
+                    <img src={ImgFrame} alt="Frame" />
+                </WrapperWelcom>
             </WrapperBanner>
 
-            <h1>{headerRestaurant.title}</h1>
+
 
         </ThemeProvider>
 
