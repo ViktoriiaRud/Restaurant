@@ -34,12 +34,10 @@ const HeaderRestaurant = () => {
                         </Link>
                     </WrapperLink>
                     <WrapperSocial>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+                        {headerRestaurant.items.map((item) => (
+                            <img src={item.imgSocial} alt="social" />
+                        ))}
                     </WrapperSocial>
-
                 </WrapperLinkSocial>
             </WrapperBanner>
 

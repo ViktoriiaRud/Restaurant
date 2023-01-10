@@ -65,7 +65,7 @@ export const Link = styled.ul`
 	justify-content: start;
 	margin: 20px;
 	list-style-type: none;
-	gap: 20px;   
+	gap: 70px;   
 	}
 `;
 
