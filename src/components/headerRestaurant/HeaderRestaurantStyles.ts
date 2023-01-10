@@ -30,8 +30,13 @@ export const Span = styled.span`
 `;
 
 export const WrapperLinkSocial = styled.div`
+    margin: 10px 45px 10px 10px;
 	max-width: 1360px;
 	max-height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px; 
 `;
 
 export const WrapperLink = styled.div`
@@ -40,8 +45,12 @@ export const WrapperLink = styled.div`
 `;
 
 export const WrapperSocial = styled.div`
-	max-width: 179px;
+    margin: 20px 10px 10px 10px;
 	max-height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	gap: 20px; 
 `;
 
 export const LinkYellow = styled.a`
@@ -68,6 +77,7 @@ export const Link = styled.ul`
 	gap: 70px;   
 	}
 `;
+
 
 
 
