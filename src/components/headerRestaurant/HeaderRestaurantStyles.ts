@@ -80,6 +80,7 @@ export const Link = styled.ul`
 
 
 export const WrapperWelcome = styled.div`
+    position: relative;
 	margin: 10px 45px 10px 10px;
 	max-width: 1440px;
 	max-height: 810px;
@@ -121,11 +122,43 @@ export const WrapperTitle = styled.div`
 	}
 `;
 
-
-
 export const WrapperImg = styled.div`
 	margin: 0; 
-	max-width: 665px;
-
+	max-width: 645px;
+	max-height: 700px;
+	img {
+		width: 595px;
+		max-height: 612px;	
+	}
 	}
 	`;
+
+
+
+export const Span1 = styled.span`
+	margin: 20px -5px 38px -6px;
+	max-width: 670px;
+	display: block;
+	height: 30px;
+	background: #5C6168;
+	mix-blend-mode: normal;
+`;
+
+export const Span2 = styled.span`
+    margin: -654px -47px 0px 552px;
+	max-width: 30px;
+	display: block;
+	height: 650px;
+	background: #5C6168;
+	mix-blend-mode: normal;
+`;
+
+export const Span3 = styled.span`
+    margin: -650px -21px -4px -36px;
+    max-width: 30px;
+	display: block;
+	height: 650px;
+	background: #5C6168;
+	mix-blend-mode: normal;
+`;
+

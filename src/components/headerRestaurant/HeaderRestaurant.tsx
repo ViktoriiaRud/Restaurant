@@ -1,7 +1,7 @@
 import React from "react";
 import headerRestaurant from './HeaderRestaurantData';
 import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcome, WrapperTitle, WrapperImg } from "./HeaderRestaurantStyles";
-import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, LinkWhite, Link } from './HeaderRestaurantStyles';
+import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, LinkWhite, Link, Span1, Span2, Span3 } from './HeaderRestaurantStyles';
 import { Button, ButtonOrange } from '../atoms/button/ButtonStyled';
 import ImgFrame from '../../assets/img/Framer.png';
 import GlobalStyle from "../../theme/globalStyles";
@@ -49,8 +49,13 @@ const HeaderRestaurant = () => {
                         <h2>{RichText.headerRestaurant.subtitle}</h2>
                     </WrapperTitle>
                     <WrapperImg>
+                        <Span1></Span1>
                         <img src={ImgFrame} alt="Frame" />
+
+                        <Span2></Span2>
+                        <Span3></Span3>
                     </WrapperImg>
+
 
                 </WrapperWelcome>
             </WrapperBanner>
