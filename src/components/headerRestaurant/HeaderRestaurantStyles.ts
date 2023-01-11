@@ -74,7 +74,7 @@ export const Link = styled.ul`
 	justify-content: start;
 	margin: 20px;
 	list-style-type: none;
-	gap: 70px;   
+	gap: 55px;   
 	}
 `;
 
@@ -89,7 +89,8 @@ export const WrapperWelcome = styled.div`
 	gap: 10px; 
 
 	h1{ 
-		margin-top: 150px;
+		margin: 150px 0px 10px 25px;
+		text-align: start;
 		font-family: 'Cormorant Infant';
 		font-style: normal;
 		font-weight: 400;
@@ -99,7 +100,9 @@ export const WrapperWelcome = styled.div`
 		color: #FFFFFF;
 	}
 	h2{
-		margin-top: 40px;
+		margin: 40px 0px 10px 25px;
+		text-align: start;
+		max-width: 600px;
 		font-family: 'Josefin Sans';
 		font-style: normal;
 		font-weight: 400;
@@ -111,7 +114,7 @@ export const WrapperWelcome = styled.div`
 `;
 
 
-export const WrapperTitle = styled.ul`
+export const WrapperTitle = styled.div`
 	margin: 0; 
 	max-width: 665px;
 
@@ -119,3 +122,10 @@ export const WrapperTitle = styled.ul`
 `;
 
 
+
+export const WrapperImg = styled.div`
+	margin: 0; 
+	max-width: 665px;
+
+	}
+	`;

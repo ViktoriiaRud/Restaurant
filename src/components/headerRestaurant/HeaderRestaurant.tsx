@@ -1,6 +1,6 @@
 import React from "react";
 import headerRestaurant from './HeaderRestaurantData';
-import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcome, WrapperTitle } from "./HeaderRestaurantStyles";
+import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcome, WrapperTitle, WrapperImg } from "./HeaderRestaurantStyles";
 import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, LinkWhite, Link } from './HeaderRestaurantStyles';
 import { Button, ButtonOrange } from '../atoms/button/ButtonStyled';
 import ImgFrame from '../../assets/img/Framer.png';
@@ -48,8 +48,10 @@ const HeaderRestaurant = () => {
                         <h1>{RichText.headerRestaurant.title}</h1>
                         <h2>{RichText.headerRestaurant.subtitle}</h2>
                     </WrapperTitle>
+                    <WrapperImg>
+                        <img src={ImgFrame} alt="Frame" />
+                    </WrapperImg>
 
-                    <img src={ImgFrame} alt="Frame" />
                 </WrapperWelcome>
             </WrapperBanner>
 
