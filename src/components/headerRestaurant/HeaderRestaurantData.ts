@@ -6,7 +6,6 @@ import ImgPip from '../../assets/icons/Pip.png';
 
 
 export const headerRestaurant = {
-    title: 'Welcome to Restaurant',
     img: ImgLogo,
     link1: 'Home',
     link2: 'About Us',

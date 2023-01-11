@@ -79,7 +79,7 @@ export const Link = styled.ul`
 `;
 
 
-export const WrapperWelcom = styled.div`
+export const WrapperWelcome = styled.div`
 	margin: 10px 45px 10px 10px;
 	max-width: 1440px;
 	max-height: 810px;
@@ -98,9 +98,24 @@ export const WrapperWelcom = styled.div`
 		letter-spacing: 0.2px;
 		color: #FFFFFF;
 	}
+	h2{
+		margin-top: 40px;
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: 0.2px;
+		color: #FFFFFF;
+	}
 `;
 
 
+export const WrapperTitle = styled.ul`
+	margin: 0; 
+	max-width: 665px;
 
+	}
+`;
 
 

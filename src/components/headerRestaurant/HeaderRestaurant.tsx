@@ -1,12 +1,14 @@
 import React from "react";
 import headerRestaurant from './HeaderRestaurantData';
-import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcom } from "./HeaderRestaurantStyles";
+import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcome, WrapperTitle } from "./HeaderRestaurantStyles";
 import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, LinkWhite, Link } from './HeaderRestaurantStyles';
 import { Button, ButtonOrange } from '../atoms/button/ButtonStyled';
 import ImgFrame from '../../assets/img/Framer.png';
 import GlobalStyle from "../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from '../../theme/theme';
+
+import { RichText } from '../atoms/rich-text/RichText';
 
 
 const HeaderRestaurant = () => {
@@ -41,10 +43,14 @@ const HeaderRestaurant = () => {
                     </WrapperSocial>
                 </WrapperLinkSocial>
 
-                <WrapperWelcom>
-                    <h1>{headerRestaurant.title}</h1>
+                <WrapperWelcome>
+                    <WrapperTitle>
+                        <h1>{RichText.headerRestaurant.title}</h1>
+                        <h2>{RichText.headerRestaurant.subtitle}</h2>
+                    </WrapperTitle>
+
                     <img src={ImgFrame} alt="Frame" />
-                </WrapperWelcom>
+                </WrapperWelcome>
             </WrapperBanner>
 
 
