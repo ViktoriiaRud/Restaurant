@@ -123,6 +123,7 @@ export const WrapperTitle = styled.div`
 `;
 
 export const WrapperImg = styled.div`
+	position: relative:
 	margin: 0; 
 	max-width: 645px;
 	max-height: 700px;
@@ -132,8 +133,18 @@ export const WrapperImg = styled.div`
 	}
 	}
 	`;
-
-
+export const WrapperImg2 = styled.div`
+	margin: 0; 
+	max-width: 250px;
+	max-height: 250px;
+	position: absolute;
+    z-index: 1;
+    margin: -573px 0px 0px 283px;
+	img {
+		width: 100%;	
+	}
+	}
+	`;
 
 export const Span1 = styled.span`
 	margin: 20px -5px 38px -6px;

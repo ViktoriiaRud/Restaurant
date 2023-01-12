@@ -3,10 +3,12 @@ import ImgInstagram from '../../assets/icons/Instagram.png';
 import ImgFacebook from '../../assets/icons/Facebook.png';
 import ImgTwitter from '../../assets/icons/Twitter.png';
 import ImgPip from '../../assets/icons/Pip.png';
+import ImgPhoto from '../../assets/img/Image.png';
 
 
 export const headerRestaurant = {
     img: ImgLogo,
+    img2: ImgPhoto,
     link1: 'Home',
     link2: 'About Us',
     link3: 'Our Menu',

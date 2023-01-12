@@ -26,10 +26,17 @@ export const Button = styled.button`
     &:hover {
         transform: translateY(-5px);
         background-color: #CD853F;
+        color: #FFFFFF;
         }
 `;
 
 export const ButtonOrange = styled(Button)`
     background: #E1B168;
     color: '#292E36';
+`;
+
+export const ButtonTitle = styled(Button)`
+    background: #40464F;
+    width: 230px; 
+    color: #E1B168;  
 `;
