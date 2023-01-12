@@ -22,6 +22,12 @@ const GlobalStyle = createGlobalStyle`
     ${breakpoint.lg} {
       padding-top: 0;
     }
+
+    ${breakpoint.sm} {
+     *, align-items: center;
+    }
+
+    
   }
 
   button:focus-visible, a:focus-visible {
