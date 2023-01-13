@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { Breakpoints } from '../../../theme/breakpoints';
+import { breakpoint } from '../../../theme/breakpoints';
 
 
 export const Button = styled.button`
+    margin: 0 auto;
     margin-top: 50px;
     box-sizing: border-box;
-    width: 295px; 
+    width: 230px; 
     height: 73px;
     left: 0%;
     right: 0%;
@@ -27,6 +28,10 @@ export const Button = styled.button`
         transform: translateY(-5px);
         background-color: #CD853F;
         color: #FFFFFF;
+        }
+
+        ${breakpoint.md} {
+            width: 295px;
         }
 `;
 

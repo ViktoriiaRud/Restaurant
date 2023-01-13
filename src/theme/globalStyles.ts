@@ -24,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
     }
 
     ${breakpoint.sm} {
+      margin: 0 auto;
+    }
+
+    ${breakpoint.sm} {
      *, align-items: center;
     }
 

@@ -8,7 +8,6 @@ export const WrapperBanner = styled.section`
 
 export const WrapperLogo = styled.div`
 	padding: 5px 5px;
-	max-width: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -32,6 +31,8 @@ export const WrapperLogo = styled.div`
 `;
 
 export const Logo = styled.div`
+	margin: 0 auto;
+	margin-top: 20px;
 	margin-top: 30px;
 	max-width: 320px;
 	max-height: 188px;
@@ -44,7 +45,7 @@ export const Logo = styled.div`
 
 export const Span = styled.span`
 	margin-top: 15px;
-	max-width: 320px;
+	max-width: 600px;
 	display: block;
 	height: 1px;
 	background: #5C6168;
@@ -65,7 +66,8 @@ export const Span = styled.span`
 `;
 
 export const WrapperLinkSocial = styled.div`
-    margin: 10px 0px 10px 10px;
+margin: 0 auto;
+    // margin: 10px 0px 10px 10px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px; 
@@ -88,7 +90,8 @@ export const WrapperLink = styled.div`
 `;
 
 export const WrapperSocial = styled.div`
-    margin: 20px 76px 10px 10px;
+    margin: 0 auto;
+	margin-top: 20px;
 	max-height: 30px;
 	display: flex;
 	flex-direction: row;
@@ -96,6 +99,7 @@ export const WrapperSocial = styled.div`
 	gap: 20px; 
 
 	${breakpoint.sm} {
+		margin-top: 0px;
 		margin: 20px 90px 10px 10px;
 	}
 
@@ -194,8 +198,7 @@ export const WrapperWelcome = styled.div`
 	}
 
 	h2{
-		margin: 40px 0px 10px 25px;
-		text-align: start;
+		margin-top: 20px;
 		max-width: 600px;
 		font-family: 'Josefin Sans';
 		font-style: normal;
@@ -204,6 +207,12 @@ export const WrapperWelcome = styled.div`
 		line-height: 30px;
 		letter-spacing: 0.2px;
 		color: #FFFFFF;
+
+		${breakpoint.lg} {
+			text-align: start;
+			margin-top: 0px;
+			margin: 40px 0px 10px 25px;
+		}
 	}
 `;
 
