@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { breakpoint } from '../../theme/breakpoints';
 
 
-
 export const WrapperBanner = styled.section`
   	background-color: #40464F;
 `;
@@ -14,13 +13,20 @@ export const WrapperLogo = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	gap: 10px;
-	${breakpoint.lg} {
+
+	${breakpoint.md} {
 		padding: 20px 30px;
-		max-width: 1360px;
+		max-width: 1025px;
 		max-height: 188px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		gap: 15px;
+	}
+
+	${breakpoint.lg} {
+		padding: 20px 30px;
+		max-width: 1360px;
 		gap: 122px;
 	}
 `;
@@ -46,11 +52,13 @@ export const Span = styled.span`
 
 	${breakpoint.md} {
 		margin-top: 0px;
-		max-width: 700px;
+		max-width: 1000px;
 	}
+
 	${breakpoint.lg} {
 		max-width: 1240px;
 	}
+
 	${breakpoint.xl} {
 		max-width: 1440px;
 	}
@@ -58,7 +66,6 @@ export const Span = styled.span`
 
 export const WrapperLinkSocial = styled.div`
     margin: 10px 0px 10px 10px;
-	max-width: 320px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px; 
@@ -70,11 +77,10 @@ export const WrapperLinkSocial = styled.div`
 		flex-direction: row;
 		justify-content: space-between; 
 	}
-
 `;
 
 export const WrapperLink = styled.div`
-	max-width: 320px;
+
 	${breakpoint.lg} {
 		max-width: 796px;
 		max-height: 70px;
@@ -82,12 +88,24 @@ export const WrapperLink = styled.div`
 `;
 
 export const WrapperSocial = styled.div`
-    margin: 20px 50px 10px 10px;
+    margin: 20px 76px 10px 10px;
 	max-height: 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
 	gap: 20px; 
+
+	${breakpoint.sm} {
+		margin: 20px 90px 10px 10px;
+	}
+
+	${breakpoint.md} {
+		margin: 20px 76px 10px 10px;
+	}
+
+	${breakpoint.lg} {
+		margin: 20px 55px 10px 10px;
+	}
 `;
 
 export const LinkYellow = styled.a`
@@ -114,6 +132,11 @@ export const Link = styled.ul`
 	gap: 30px;   
 	}
 
+	${breakpoint.md} {
+		flex-direction: row;
+		gap: 55px;   
+	}
+
 	${breakpoint.lg} {
 		flex-direction: row;
 		gap: 55px;   
@@ -125,43 +148,49 @@ export const Link = styled.ul`
 export const WrapperWelcome = styled.div`
     position: relative;
 	margin: 10px 45px 10px 10px;
-	max-width: 320px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	
-	${breakpoint.lg} {
-		max-width: 1440px;
-		max-height: 810px;
+
+	${breakpoint.md} {
+		max-width: 1240px;
 		flex-direction: row;
 		justify-content: space-between;	
 	}
 
+	${breakpoint.lg} {
+		max-width: 1440px;
+		max-height: 810px;	
+	}
+
 	h1{ 
 		margin: 30px 0px 10px 25px;
-		text-align: start;
+		text-align: center;
 		font-family: 'Cormorant Infant';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 50px;
-		line-height: 110px;
+		line-height: 75px;
 		letter-spacing: 0.2px;
 		color: #FFFFFF;
 
 	${breakpoint.md} {
-		margin: 100px 0px 10px 25px;
-		font-size: 72px;
-	}
-	${breakpoint.lg} {
-		margin: 150px 0px 10px 25px;
+		text-align: center;
+		margin: 10px 0px 10px 10px;
 		font-size: 86px;
+		line-height: 110px;
+	}
+
+	${breakpoint.lg} {
+		text-align: start;
+		margin: 100px 0px 10px 25px;
+		font-size: 92px;
 	}
 
 	${breakpoint.xl} {
 		margin: 150px 0px 10px 25px;
 		font-size: 100px;
-	}
-	  
+	}  
 	}
 
 	h2{
