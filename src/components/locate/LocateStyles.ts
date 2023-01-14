@@ -39,3 +39,34 @@ export const LocateItem = styled.div`
         margin: -33px 7px 29px 25px;
     }
 `;
+
+
+export const WrapperStory = styled.div`
+    max-width: 1440px;
+    min-height: 728px;
+`;
+
+
+export const StoryPhoto = styled.div`
+    padding: 50px;
+    max-width: 743px;
+    min-height: 519px;
+`;
+
+
+export const WrapperStoryTitle = styled.div`
+    max-width: 570px;
+    min-height: 568px;
+`;
+
+
+export const WrapperData = styled.div`
+    max-width: 572px;
+    min-height: 156px;
+`;
+
+
+export const DataCard = styled.div`
+    max-width: 274px;
+    min-height: 156px;
+`;

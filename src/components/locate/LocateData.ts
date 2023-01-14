@@ -1,8 +1,10 @@
 import ImgLocateUs from '../../assets/icons/Mapa.jpg';
 import ImgOpen from '../../assets/icons/Open.jpg';
 import ImgList from '../../assets/icons/List.jpg';
+import ImgTable from '../../assets/img/Table.jpg';
 
 export const LocateData = {
+    photo: ImgTable,
     items: [
         {
             img: ImgLocateUs,
@@ -21,7 +23,8 @@ export const LocateData = {
             h3: "Reservation",
             h4: "restaurantate@gmail.com",
         },
-    ]
+    ],
+
 }
 
 export default LocateData;
