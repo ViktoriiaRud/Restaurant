@@ -1,7 +1,7 @@
 export const theme = {
     font1: 'Josefin Sans',
     font2: 'Cormorant Infant',
-    fontSide: '15px',
+    fontSide: '20px',
     wrapperXs: '921px',
     wrapper: '1100px',
     wrapperXl: '1440px,',
@@ -10,6 +10,7 @@ export const theme = {
         grey: '#40464F',
         white: '#FFFFFF',
         yellow: '#E1B168',
+        grey2: 'rgba(255, 255, 255, 0.1)',
         lightgrey: '#797E89',
         black: '#292E36',
         salmon: '#FA8072',
@@ -17,8 +18,8 @@ export const theme = {
     gap: {
         xxs: '4px',
         xs: '8px',
-        sm: '16px',
-        md: '32px',
+        sm: '20px',
+        md: '30px',
         lg: '64px',
         xl: '72px',
         xxl: '128px',

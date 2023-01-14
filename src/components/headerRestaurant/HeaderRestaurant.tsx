@@ -8,9 +8,9 @@ import GlobalStyle from "../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from '../../theme/theme';
 import { RichText } from '../atoms/rich-text/RichText';
+import { headerRestaurantType } from './HeaderRestaurantData'
 
-
-const HeaderRestaurant = () => {
+const HeaderRestaurant = ({ img, img2, imgSocial, links }: headerRestaurantType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
@@ -27,18 +27,19 @@ const HeaderRestaurant = () => {
                 <WrapperLinkSocial>
                     <WrapperLink>
                         <Link>
-                            <li><LinkYellow href="#">{headerRestaurant.link1}</LinkYellow></li>
-                            <li><LinkWhite href="#">{headerRestaurant.link2}</LinkWhite></li>
-                            <li><LinkWhite href="#">{headerRestaurant.link3}</LinkWhite></li>
-                            <li><LinkWhite href="#">{headerRestaurant.link4}</LinkWhite></li>
-                            <li><LinkWhite href="#">{headerRestaurant.link5}</LinkWhite></li>
-                            <li><LinkWhite href="#">{headerRestaurant.link6}</LinkWhite></li>
+                            {links.map((link, index) => (
+                                <li key={index}><LinkYellow href={link.href} >{link.name}</LinkYellow></li>
+                            ))}
+
                         </Link>
                     </WrapperLink>
                     <WrapperSocial>
-                        {headerRestaurant.items.map((item) => (
-                            <img src={item.imgSocial} alt="social" />
-                        ))}
+                        {imgSocial ?
+                            imgSocial.map((item) => (
+                                <img src={item} alt="social" />
+                            ))
+                            : null}
+
                     </WrapperSocial>
                 </WrapperLinkSocial>
 
@@ -54,18 +55,12 @@ const HeaderRestaurant = () => {
                         <Span2></Span2>
                         <Span3></Span3>
                         <WrapperImg2>
-                            <img src={headerRestaurant.img2} alt="Frame" />
+                            <img src={img2} alt="Frame" />
                         </WrapperImg2>
                     </WrapperImg>
-
-
                 </WrapperWelcome>
             </WrapperBanner>
-
-
-
         </ThemeProvider>
-
     </>
 
 }

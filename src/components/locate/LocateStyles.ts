@@ -70,3 +70,9 @@ export const DataCard = styled.div`
     max-width: 274px;
     min-height: 156px;
 `;
+
+
+export const Autograph = styled.div`
+    max-width: 274px;
+    min-height: 156px;
+`;

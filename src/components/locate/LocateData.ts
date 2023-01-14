@@ -2,9 +2,11 @@ import ImgLocateUs from '../../assets/icons/Mapa.jpg';
 import ImgOpen from '../../assets/icons/Open.jpg';
 import ImgList from '../../assets/icons/List.jpg';
 import ImgTable from '../../assets/img/Table.jpg';
+import ImgAutograph from '../../assets/icons/Autograph.jpg';
 
 export const LocateData = {
     photo: ImgTable,
+    img: ImgAutograph,
     items: [
         {
             img: ImgLocateUs,

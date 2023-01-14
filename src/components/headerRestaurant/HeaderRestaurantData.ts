@@ -5,34 +5,32 @@ import ImgTwitter from '../../assets/icons/Twitter.png';
 import ImgPip from '../../assets/icons/Pip.png';
 import ImgPhoto from '../../assets/img/Image.png';
 
-
-export const headerRestaurant = {
-    img: ImgLogo,
-    img2: ImgPhoto,
-    link1: 'Home',
-    link2: 'About Us',
-    link3: 'Our Menu',
-    link4: 'Pages',
-    link5: 'Blog',
-    link6: 'Contact Us',
-    items: [
-        {
-            imgSocial: ImgInstagram,
-        },
-        {
-            imgSocial: ImgFacebook,
-        },
-        {
-            imgSocial: ImgTwitter,
-
-        },
-        {
-            imgSocial: ImgPip,
-
-        },
-    ]
+export type headerRestaurantType = {
+    img: string,
+    img2: string,
+    links: LinkType[],
+    imgSocial: string[]
+}
+export type LinkType = {
+    href: string,
+    name: string
 }
 
 
+export const headerRestaurantData: headerRestaurantType = {
+    img: ImgLogo,
+    img2: ImgPhoto,
+    links: [
+        { href: '/sadsadsad', name: 'Home' },
+        { href: '/sadsadsad', name: 'About Us' },
+        { href: '/sadsadsad', name: 'Our Menu' },
+        { href: '/sadsadsad', name: 'Pages' },
+        { href: '/sadsadsad', name: 'Blog' },
+        { href: '/sadsadsad', name: 'Contact Us' },
+    ],
 
-export default headerRestaurant;
+    imgSocial: [ImgInstagram, ImgFacebook, ImgTwitter, ImgPip]
+}
+
+
+export default headerRestaurantData;

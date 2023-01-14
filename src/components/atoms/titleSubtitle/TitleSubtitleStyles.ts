@@ -12,3 +12,5 @@ export const TitleStory = styled.div`
 
 export const DataTitle = styled(TitleStory)``;
 
+
+

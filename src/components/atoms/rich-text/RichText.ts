@@ -19,6 +19,7 @@ export const RichText = {
             subtitle: "Happily in the fourth year by fulfill the motto.",
         },
     ],
+    h5: "JOSEFINE",
 
 }
 

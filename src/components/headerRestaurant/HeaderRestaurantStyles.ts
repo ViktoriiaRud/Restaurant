@@ -3,7 +3,7 @@ import { breakpoint } from '../../theme/breakpoints';
 
 
 export const WrapperBanner = styled.section`
-  	background-color: #40464F;
+	background-color: ${({ theme }) => theme.colors.grey};
 	min-height: 964px;
 `;
 
@@ -69,7 +69,6 @@ export const Span = styled.span`
 
 export const WrapperLinkSocial = styled.div`
 margin: 0 auto;
-    // margin: 10px 0px 10px 10px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px; 
@@ -98,7 +97,7 @@ export const WrapperSocial = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
-	gap: 20px; 
+	gap: ${({ theme }) => theme.gap.sm};
 
 	${breakpoint.sm} {
 		margin-top: 0px;
@@ -135,7 +134,7 @@ export const Link = styled.ul`
 	justify-content: start;
 	margin-top: 20px;
 	list-style-type: none;
-	gap: 30px;   
+	gap: ${({ theme }) => theme.gap.md}  
 	}
 
 	${breakpoint.md} {
@@ -149,7 +148,6 @@ export const Link = styled.ul`
 	}
 	}
 `;
-
 
 export const WrapperWelcome = styled.div`
     position: relative;
@@ -173,42 +171,43 @@ export const WrapperWelcome = styled.div`
 		margin: 30px 0px 10px 25px;
 		text-align: center;
 		font-family: 'Cormorant Infant';
+		font-family: ${({ theme }) => theme.font2}
 		font-style: normal;
 		font-weight: 400;
 		font-size: 50px;
 		line-height: 75px;
 		letter-spacing: 0.2px;
-		color: #FFFFFF;
+		color: ${({ theme }) => theme.colors.white};
+		
+		${breakpoint.md} {
+			text-align: center;
+			margin: 10px 0px 10px 10px;
+			font-size: 86px;
+			line-height: 110px;
+		}
 
-	${breakpoint.md} {
-		text-align: center;
-		margin: 10px 0px 10px 10px;
-		font-size: 86px;
-		line-height: 110px;
-	}
+		${breakpoint.lg} {
+			text-align: start;
+			margin: 100px 0px 10px 25px;
+			font-size: 92px;
+		}
 
-	${breakpoint.lg} {
-		text-align: start;
-		margin: 100px 0px 10px 25px;
-		font-size: 92px;
-	}
-
-	${breakpoint.xl} {
-		margin: 150px 0px 10px 25px;
-		font-size: 100px;
-	}  
-	}
+		${breakpoint.xl} {
+			margin: 150px 0px 10px 25px;
+			font-size: 100px;
+		}  
+		}
 
 	h2{
 		margin-top: 20px;
 		max-width: 600px;
-		font-family: 'Josefin Sans';
+		font-family: ${({ theme }) => theme.font1}
 		font-style: normal;
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 30px;
 		letter-spacing: 0.2px;
-		color: #FFFFFF;
+		color: ${({ theme }) => theme.colors.white};
 
 		${breakpoint.lg} {
 			text-align: start;
@@ -268,7 +267,7 @@ export const Span1 = styled.span`
 	max-width: 670px;
 	display: block;
 	height: 30px;
-	background: #5C6168;
+	background-color: ${({ theme }) => theme.colors.grey2};
 	mix-blend-mode: normal;
 	}
 
@@ -282,7 +281,7 @@ export const Span2 = styled.span`
 		max-width: 30px;
 		display: block;
 		height: 650px;
-		background: #5C6168;
+		background-color: ${({ theme }) => theme.colors.grey2};
 		mix-blend-mode: normal;
 	}
 
@@ -296,7 +295,7 @@ export const Span3 = styled.span`
 		max-width: 30px;
 		display: block;
 		height: 650px;
-		background: #5C6168;
+		background-color: ${({ theme }) => theme.colors.grey2};
 		mix-blend-mode: normal;
 	}
 

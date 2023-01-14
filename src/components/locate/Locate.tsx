@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../../theme";
 import { RichText } from '../atoms/rich-text/RichText';
 import { LocateData } from './LocateData';
-import { WrapperLocate, LocateCard, LocateItem, WrapperStory, StoryPhoto, WrapperStoryTitle, WrapperData, DataCard } from './LocateStyles';
+import { WrapperLocate, LocateCard, LocateItem, WrapperStory, StoryPhoto, WrapperStoryTitle, WrapperData, DataCard, Autograph } from './LocateStyles';
 import { TitleStory, DataTitle } from '../../components/atoms/titleSubtitle/TitleSubtitleStyles';
 
 
@@ -42,8 +42,11 @@ const Locate = () => {
                             <h4>{item.subtitle}</h4>
                         </DataCard>
                     ))}
-
                 </WrapperData>
+                <Autograph>
+                    <h5>{RichText.h5}</h5>
+                    <img src={LocateData.img} alt="" />
+                </Autograph>
 
             </WrapperStory>
         </ThemeProvider>
