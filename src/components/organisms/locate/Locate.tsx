@@ -2,7 +2,7 @@ import React from "react";
 import GlobalStyle from "../../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../theme";
-import { RichText } from '../../atoms/rich-text/RichText';
+import { TextData } from '../../atoms/text/TextData';
 import { LocateData } from './LocateData';
 import { WrapperLocate, LocateCard, LocateItem, WrapperStory, StoryPhoto, WrapperStoryTitle, WrapperData, DataCard, Autograph } from './LocateStyles';
 import { TitleStory, DataTitle } from '../../../components/atoms/titleSubtitle/TitleSubtitleStyles';
@@ -31,12 +31,12 @@ const Locate = () => {
                     <img src={LocateData.photo} alt="" />
                 </StoryPhoto>
                 <WrapperStoryTitle>
-                    <TitleStory>{RichText.story.title}</TitleStory>
-                    <h4>{RichText.story.subtitle}</h4>
+                    <TitleStory>{TextData.story.title}</TitleStory>
+                    <h4>{TextData.story.subtitle}</h4>
                 </WrapperStoryTitle>
 
                 <WrapperData>
-                    {RichText.array.map((item, index) => (
+                    {TextData.array.map((item, index) => (
                         <DataCard key={index}>
                             <DataTitle>{item.title}</DataTitle>
                             <h4>{item.subtitle}</h4>
@@ -44,7 +44,7 @@ const Locate = () => {
                     ))}
                 </WrapperData>
                 <Autograph>
-                    <h5>{RichText.h5}</h5>
+                    <h5>{TextData.h5}</h5>
                     <img src={LocateData.img} alt="" />
                 </Autograph>
 

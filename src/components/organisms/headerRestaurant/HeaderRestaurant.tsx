@@ -7,7 +7,7 @@ import ImgFrame from '../../../assets/img/Framer.png';
 import GlobalStyle from "../../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from './../../../theme/theme';
-import { RichText } from '../../atoms/rich-text/RichText';
+import { TextData } from '../../atoms/text/TextData';
 import { headerRestaurantType } from './HeaderRestaurantData'
 
 const HeaderRestaurant = ({ img, img2, imgSocial, links }: headerRestaurantType) => {
@@ -45,8 +45,8 @@ const HeaderRestaurant = ({ img, img2, imgSocial, links }: headerRestaurantType)
 
                 <WrapperWelcome>
                     <WrapperTitle>
-                        <h1>{RichText.headerRestaurant.title}</h1>
-                        <h2>{RichText.headerRestaurant.subtitle}</h2>
+                        <h1>{TextData.headerRestaurant.title}</h1>
+                        <h2>{TextData.headerRestaurant.subtitle}</h2>
                         <ButtonTitle>View Menu</ButtonTitle>
                     </WrapperTitle>
                     <WrapperImg>

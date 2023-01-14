@@ -1,4 +1,4 @@
-export const RichText = {
+export const TextData = {
     headerRestaurant: {
         title: 'Welcome to Restaurant',
         subtitle: "The people, food and the prime locations make the perfect place good friends & family to come together and have great time.",
@@ -24,4 +24,4 @@ export const RichText = {
 }
 
 
-export default RichText;
+export default TextData;
