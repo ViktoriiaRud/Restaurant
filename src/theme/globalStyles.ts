@@ -19,6 +19,26 @@ const GlobalStyle = createGlobalStyle`
     word-break: break-word;
     padding-top: 10px;
 
+    h3 {
+      font-family: 'Cormorant Infant';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 39px;
+      letter-spacing: 0.2px;
+      color: #292E36;
+    }
+
+    h4 {
+      font-family: 'Josefin Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+      color: #555555;  
+    }
+
     ${breakpoint.lg} {
       padding-top: 0;
     }
@@ -44,5 +64,8 @@ const GlobalStyle = createGlobalStyle`
   }
   ;
 `;
+
+
+
 
 export default GlobalStyle;

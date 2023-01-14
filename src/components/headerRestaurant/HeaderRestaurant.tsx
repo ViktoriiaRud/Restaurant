@@ -7,7 +7,6 @@ import ImgFrame from '../../assets/img/Framer.png';
 import GlobalStyle from "../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from '../../theme/theme';
-
 import { RichText } from '../atoms/rich-text/RichText';
 
 

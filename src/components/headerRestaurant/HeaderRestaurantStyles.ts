@@ -4,9 +4,11 @@ import { breakpoint } from '../../theme/breakpoints';
 
 export const WrapperBanner = styled.section`
   	background-color: #40464F;
+	min-height: 964px;
 `;
 
 export const WrapperLogo = styled.div`
+
 	padding: 5px 5px;
 	display: flex;
 	flex-direction: column;
