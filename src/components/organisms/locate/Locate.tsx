@@ -1,11 +1,11 @@
 import React from "react";
-import GlobalStyle from "../../theme/globalStyles";
+import GlobalStyle from "../../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
-import { theme } from "../../theme";
-import { RichText } from '../atoms/rich-text/RichText';
+import { theme } from "../../../theme";
+import { RichText } from '../../atoms/rich-text/RichText';
 import { LocateData } from './LocateData';
 import { WrapperLocate, LocateCard, LocateItem, WrapperStory, StoryPhoto, WrapperStoryTitle, WrapperData, DataCard, Autograph } from './LocateStyles';
-import { TitleStory, DataTitle } from '../../components/atoms/titleSubtitle/TitleSubtitleStyles';
+import { TitleStory, DataTitle } from '../../../components/atoms/titleSubtitle/TitleSubtitleStyles';
 
 
 const Locate = () => {

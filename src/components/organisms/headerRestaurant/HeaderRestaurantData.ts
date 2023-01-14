@@ -1,9 +1,9 @@
-import ImgLogo from '../../assets/icons/Logo.png';
-import ImgInstagram from '../../assets/icons/Instagram.png';
-import ImgFacebook from '../../assets/icons/Facebook.png';
-import ImgTwitter from '../../assets/icons/Twitter.png';
-import ImgPip from '../../assets/icons/Pip.png';
-import ImgPhoto from '../../assets/img/Image.png';
+import ImgLogo from '../../../assets/icons/Logo.png';
+import ImgInstagram from '../../../assets/icons/Instagram.png';
+import ImgFacebook from '../../../assets/icons/Facebook.png';
+import ImgTwitter from '../../../assets/icons/Twitter.png';
+import ImgPip from '../../../assets/icons/Pip.png';
+import ImgPhoto from '../../../assets/img/Image.png';
 
 export type headerRestaurantType = {
     img: string,

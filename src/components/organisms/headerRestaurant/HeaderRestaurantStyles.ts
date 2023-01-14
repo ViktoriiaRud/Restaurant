@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoint } from '../../theme/breakpoints';
+import { breakpoint } from '../../../theme/breakpoints';
 
 
 export const WrapperBanner = styled.section`

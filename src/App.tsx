@@ -1,7 +1,7 @@
 import React from 'react';
-import HeaderRestaurant from './components/headerRestaurant/HeaderRestaurant';
-import Locate from './components/locate/Locate';
-import headerRestaurantData from './components/headerRestaurant/HeaderRestaurantData';
+import HeaderRestaurant from './components/organisms/headerRestaurant/HeaderRestaurant';
+import Locate from '././components/organisms/locate/Locate';
+import headerRestaurantData from './components/organisms/headerRestaurant/HeaderRestaurantData';
 
 function App() {
   return (

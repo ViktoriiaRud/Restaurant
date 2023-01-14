@@ -2,12 +2,12 @@ import React from "react";
 import headerRestaurant from './HeaderRestaurantData';
 import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcome, WrapperTitle, WrapperImg, WrapperImg2 } from "./HeaderRestaurantStyles";
 import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, LinkWhite, Link, Span1, Span2, Span3 } from './HeaderRestaurantStyles';
-import { Button, ButtonOrange, ButtonTitle } from '../atoms/button/ButtonStyled';
-import ImgFrame from '../../assets/img/Framer.png';
-import GlobalStyle from "../../theme/globalStyles";
+import { Button, ButtonOrange, ButtonTitle } from '../../atoms/button/ButtonStyled';
+import ImgFrame from '../../../assets/img/Framer.png';
+import GlobalStyle from "../../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
-import { theme } from '../../theme/theme';
-import { RichText } from '../atoms/rich-text/RichText';
+import { theme } from './../../../theme/theme';
+import { RichText } from '../../atoms/rich-text/RichText';
 import { headerRestaurantType } from './HeaderRestaurantData'
 
 const HeaderRestaurant = ({ img, img2, imgSocial, links }: headerRestaurantType) => {
