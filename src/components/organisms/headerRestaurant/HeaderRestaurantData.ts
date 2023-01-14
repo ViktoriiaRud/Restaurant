@@ -4,10 +4,12 @@ import ImgFacebook from '../../../assets/icons/Facebook.png';
 import ImgTwitter from '../../../assets/icons/Twitter.png';
 import ImgPip from '../../../assets/icons/Pip.png';
 import ImgPhoto from '../../../assets/img/Image.png';
+import ImgFrame from '../../../assets/img/Framer.png';
 
 export type headerRestaurantType = {
     img: string,
     img2: string,
+    img3: string,
     links: LinkType[],
     imgSocial: string[]
 }
@@ -20,6 +22,7 @@ export type LinkType = {
 export const headerRestaurantData: headerRestaurantType = {
     img: ImgLogo,
     img2: ImgPhoto,
+    img3: ImgFrame,
     links: [
         { href: '/sadsadsad', name: 'Home' },
         { href: '/sadsadsad', name: 'About Us' },
