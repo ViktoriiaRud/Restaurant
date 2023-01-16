@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h4 {
+      margin-top: 20px;
       font-family: 'Josefin Sans';
       font-style: normal;
       font-weight: 400;

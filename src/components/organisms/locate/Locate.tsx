@@ -25,27 +25,30 @@ const Locate = ({ img1, photo, items, title2, subtitle2, h5, array, }: locateDat
             </WrapperLocate>
 
             <WrapperStory>
-                <StoryPhoto>
-                    <img src={photo} alt="" />
-                </StoryPhoto>
-                <WrapperStoryTitle>
-                    <TitleStory>{title2}</TitleStory>
-                    <h4>{subtitle2}</h4>
-                </WrapperStoryTitle>
+                <div>
+                    <StoryPhoto>
+                        <img src={photo} alt="" />
+                    </StoryPhoto>
+                </div>
+                <div>
+                    <WrapperStoryTitle>
+                        <TitleStory>{title2}</TitleStory>
+                        <h4>{subtitle2}</h4>
+                    </WrapperStoryTitle>
 
-                <WrapperData>
-                    {array.map((item, index) => (
-                        <DataCard key={index}>
-                            <DataTitle>{item.titleData}</DataTitle>
-                            <h4>{item.subtitle}</h4>
-                        </DataCard>
-                    ))}
-                </WrapperData>
-                <Autograph>
-                    <h5>{h5}</h5>
-                    <img src={img1} alt="" />
-                </Autograph>
-
+                    <WrapperData>
+                        {array.map((item, index) => (
+                            <DataCard key={index}>
+                                <DataTitle>{item.titleData}</DataTitle>
+                                <h4>{item.subtitle}</h4>
+                            </DataCard>
+                        ))}
+                    </WrapperData>
+                    <Autograph>
+                        <h5>{h5}</h5>
+                        <img src={img1} alt="" />
+                    </Autograph>
+                </div>
             </WrapperStory>
         </ThemeProvider>
     </>

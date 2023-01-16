@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const WrapperLocate = styled.section`
-    padding: 30px 0px 10px 24px;
+    padding: 75px 0px 10px 26px;
     max-width: 1440px;
     min-height: 300px;
 `;
@@ -44,30 +44,39 @@ export const LocateItem = styled.div`
 export const WrapperStory = styled.div`
     max-width: 1440px;
     min-height: 728px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 `;
 
 
 export const StoryPhoto = styled.div`
-    padding: 50px;
-    max-width: 743px;
-    min-height: 519px;
+    padding: 30px;
+    max-width: 700px;
+    min-height: 350px;
 `;
 
 
 export const WrapperStoryTitle = styled.div`
+    margin-top: 50px;
     max-width: 570px;
-    min-height: 568px;
+    min-height: 200px;  
 `;
 
 
 export const WrapperData = styled.div`
     max-width: 572px;
     min-height: 156px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `;
 
 
 export const DataCard = styled.div`
-    max-width: 274px;
+    max-width: 286px;
     min-height: 156px;
 `;
 
@@ -75,4 +84,7 @@ export const DataCard = styled.div`
 export const Autograph = styled.div`
     max-width: 274px;
     min-height: 156px;
-`;
+    img {
+        margin-top: 20px;
+    }
+    `;
