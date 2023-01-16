@@ -3,18 +3,17 @@ import GlobalStyle from "../../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../theme";
 import { TextData } from '../../atoms/text/TextData';
-import { LocateData } from './LocateData';
 import { WrapperLocate, LocateCard, LocateItem, WrapperStory, StoryPhoto, WrapperStoryTitle, WrapperData, DataCard, Autograph } from './LocateStyles';
 import { TitleStory, DataTitle } from '../../../components/atoms/titleSubtitle/TitleSubtitleStyles';
+import { locateDataType } from './LocateData';
 
-
-const Locate = () => {
+const Locate = ({ img1, photo, items }: locateDataType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
             <WrapperLocate>
                 <LocateCard>
-                    {LocateData.items.map((item, index) => (
+                    {items.map((item, index) => (
                         <LocateItem key={index}>
                             <div className="flex">
                                 <img src={item.img} alt="locate" />
@@ -28,7 +27,7 @@ const Locate = () => {
 
             <WrapperStory>
                 <StoryPhoto>
-                    <img src={LocateData.photo} alt="" />
+                    <img src={photo} alt="" />
                 </StoryPhoto>
                 <WrapperStoryTitle>
                     <TitleStory>{TextData.story.title}</TitleStory>
@@ -45,7 +44,7 @@ const Locate = () => {
                 </WrapperData>
                 <Autograph>
                     <h5>{TextData.h5}</h5>
-                    <img src={LocateData.img} alt="" />
+                    <img src={img1} alt="" />
                 </Autograph>
 
             </WrapperStory>

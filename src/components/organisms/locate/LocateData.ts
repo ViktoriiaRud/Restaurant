@@ -4,9 +4,23 @@ import ImgList from '../../../assets/icons/List.jpg';
 import ImgTable from '../../../assets/img/Table.jpg';
 import ImgAutograph from '../../../assets/icons/Autograph.jpg';
 
-export const LocateData = {
+export type locateDataType = {
+    photo: string,
+    img1: string,
+    items: locateUsType[],
+
+}
+
+export type locateUsType = {
+    img: string,
+    h3: string,
+    h4: string,
+}
+
+
+export const locateData: locateDataType = {
     photo: ImgTable,
-    img: ImgAutograph,
+    img1: ImgAutograph,
     items: [
         {
             img: ImgLocateUs,
@@ -29,4 +43,4 @@ export const LocateData = {
 
 }
 
-export default LocateData;
+export default locateData;

@@ -11,11 +11,12 @@ export type headerRestaurantType = {
     img2: string,
     img3: string,
     links: LinkType[],
-    imgSocial: string[]
+    imgSocial: string[],
 }
+
 export type LinkType = {
     href: string,
-    name: string
+    name: string,
 }
 
 
