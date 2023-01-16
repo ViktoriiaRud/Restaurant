@@ -5,10 +5,9 @@ import { Button, ButtonOrange, ButtonTitle } from '../../atoms/button/ButtonStyl
 import GlobalStyle from "../../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from './../../../theme/theme';
-import { TextData } from '../../atoms/text/TextData';
 import { headerRestaurantType } from './HeaderRestaurantData'
 
-const HeaderRestaurant = ({ img, img2, img3, imgSocial, links }: headerRestaurantType) => {
+const HeaderRestaurant = ({ img, img2, img3, imgSocial, links, title, subtitle }: headerRestaurantType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
@@ -17,7 +16,7 @@ const HeaderRestaurant = ({ img, img2, img3, imgSocial, links }: headerRestauran
                 <WrapperLogo>
                     <Button>Call - 123 456 789</Button>
                     <Logo>
-                        <img src={img} alt="" />
+                        <img src={img} alt="photo" />
                     </Logo>
                     <ButtonOrange>Reservation</ButtonOrange>
                 </WrapperLogo>
@@ -43,8 +42,8 @@ const HeaderRestaurant = ({ img, img2, img3, imgSocial, links }: headerRestauran
 
                 <WrapperWelcome>
                     <WrapperTitle>
-                        <h1>{TextData.headerRestaurant.title}</h1>
-                        <h2>{TextData.headerRestaurant.subtitle}</h2>
+                        <h1>{title}</h1>
+                        <h2>{subtitle}</h2>
                         <ButtonTitle>View Menu</ButtonTitle>
                     </WrapperTitle>
                     <WrapperImg>
