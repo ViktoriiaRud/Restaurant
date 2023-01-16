@@ -14,6 +14,7 @@ export type headerRestaurantType = {
     imgSocial: string[],
     title: string,
     subtitle: string,
+
 }
 
 export type LinkType = {
@@ -29,7 +30,7 @@ export const headerRestaurantData: headerRestaurantType = {
     title: "Welcome to Restaurant",
     subtitle: "The people, food and the prime locations make the perfect place good friends & family to come together and have great time.",
     links: [
-        { href: '/sadsadsad', name: 'Home' },
+        { href: '/sadsadsad', name: 'Home', },
         { href: '/sadsadsad', name: 'About Us' },
         { href: '/sadsadsad', name: 'Our Menu' },
         { href: '/sadsadsad', name: 'Pages' },

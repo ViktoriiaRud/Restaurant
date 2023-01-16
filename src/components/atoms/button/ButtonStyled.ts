@@ -41,7 +41,12 @@ export const ButtonOrange = styled(Button)`
 `;
 
 export const ButtonTitle = styled(Button)`
+    margin: 23px 0px 14px 39px;
     background: #40464F;
     width: 230px; 
-    color: #E1B168;  
+    color: #E1B168; 
+    
+    ${breakpoint.md} {
+        margin: 30px 0px 14px 39px;
+    } 
 `;

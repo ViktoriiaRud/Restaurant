@@ -68,7 +68,7 @@ export const Span = styled.span`
 `;
 
 export const WrapperLinkSocial = styled.div`
-margin: 0 auto;
+    margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 10px; 
@@ -120,17 +120,18 @@ export const LinkYellow = styled.a`
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 0.2px;
-	color: #E1B168;
+	color: ${({ theme }) => theme.colors.yellow};
 `;
 
 export const LinkWhite = styled(LinkYellow)`
 	color: #FFFFFF;
 `;
 
-
 export const Link = styled.ul`
+    padding: 51px;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: start;
 	margin-top: 20px;
 	list-style-type: none;
@@ -138,12 +139,12 @@ export const Link = styled.ul`
 	}
 
 	${breakpoint.md} {
-		flex-direction: row;
-		gap: 55px;   
+		padding: 5px;
+		flex-wrap: wrap;
+		gap: 50px;   
 	}
 
 	${breakpoint.lg} {
-		flex-direction: row;
 		gap: 55px;   
 	}
 	}

@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     padding-top: 10px;
 
     h3 {
+      text-align: center;
       font-family: 'Cormorant Infant';
       font-style: normal;
       font-weight: 400;
