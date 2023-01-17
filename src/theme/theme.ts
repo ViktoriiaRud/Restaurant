@@ -15,6 +15,7 @@ export const theme = {
         black: '#292E36',
         salmon: '#FA8072',
         grey8: '#5C6168',
+        hover: '#CD853F',
     },
     gap: {
         xxs: '4px',

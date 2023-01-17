@@ -18,5 +18,44 @@ export const TitleStory = styled.div`
 
 export const DataTitle = styled(TitleStory)``;
 
+export const Title = styled.div` 
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.black};
+
+`;
+
+
+export const SpecialTitle = styled.div` 
+    font-family: ${({ theme }) => theme.font2};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+export const Title1 = styled.div` 
+    font-family: ${({ theme }) => theme.font2};
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.black};
+`;
+export const Title2 = styled(Title1)``;
+export const Title3 = styled(Title1)``;
+
+
 
 

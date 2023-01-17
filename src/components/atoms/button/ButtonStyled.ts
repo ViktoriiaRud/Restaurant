@@ -11,7 +11,7 @@ export const Button = styled.button`
     left: 0%;
     right: 0%;
     top: 0px;
-    background: #40464F;
+    background: ${({ theme }) => theme.colors.grey};
     border: 2px solid #E1B168;
     border-radius: 0px;
     left: calc(50% - 124px/2 + 0.5px);
@@ -22,7 +22,7 @@ export const Button = styled.button`
     font-size: 22px;
     text-align: center;
     letter-spacing: 0.44px;
-    color: #FFFFFF;
+    color: ${({ theme }) => theme.colors.white};
     cursor: pointer;
     &:hover {
         transform: translateY(-5px);
@@ -36,17 +36,30 @@ export const Button = styled.button`
 `;
 
 export const ButtonOrange = styled(Button)`
-    background: #E1B168;
-    color: '#292E36';
+    background: ${({ theme }) => theme.colors.yellow};
+    color: ${({ theme }) => theme.colors.black};
 `;
 
 export const ButtonTitle = styled(Button)`
     margin: 23px 0px 14px 39px;
-    background: #40464F;
+    background: ${({ theme }) => theme.colors.grey}; 
     width: 230px; 
-    color: #E1B168; 
+    color: ${({ theme }) => theme.colors.yellow}; 
     
     ${breakpoint.md} {
         margin: 30px 0px 14px 39px;
     } 
 `;
+
+export const ButtonMenu = styled(Button)`
+    margin: 23px 0px 14px 39px;
+    background: ${({ theme }) => theme.colors.transparent};
+    width: 230px; 
+    color: ${({ theme }) => theme.colors.yellow};
+     
+    
+    ${breakpoint.md} {
+        margin: 30px 0px 14px 39px;
+    } 
+`;
+
