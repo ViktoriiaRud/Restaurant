@@ -14,6 +14,7 @@ export const theme = {
         lightgrey: '#797E89',
         black: '#292E36',
         salmon: '#FA8072',
+        grey8: '#5C6168',
     },
     gap: {
         xxs: '4px',

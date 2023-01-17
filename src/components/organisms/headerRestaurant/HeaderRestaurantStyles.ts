@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../../theme/breakpoints';
+import { theme } from '../../../theme/theme';
 
 
 export const WrapperBanner = styled.section`
 	background-color: ${({ theme }) => theme.colors.grey};
-	min-height: 964px;
+	min-height: 972px;
 `;
 
 export const WrapperLogo = styled.div`
@@ -50,7 +51,7 @@ export const Span = styled.span`
 	max-width: 600px;
 	display: block;
 	height: 1px;
-	background: #5C6168;
+	background-color: ${({ theme }) => theme.colors.grey8};
 	mix-blend-mode: normal;
 
 	${breakpoint.md} {
@@ -114,7 +115,7 @@ export const WrapperSocial = styled.div`
 `;
 
 export const LinkYellow = styled.a`
-	font-family: 'Josefin Sans';
+	font-family: ${({ theme }) => theme.font1};
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -171,8 +172,7 @@ export const WrapperWelcome = styled.div`
 	h1{ 
 		margin: 30px 0px 10px 25px;
 		text-align: center;
-		font-family: 'Cormorant Infant';
-		font-family: ${({ theme }) => theme.font2}
+		font-family: ${({ theme }) => theme.font2};
 		font-style: normal;
 		font-weight: 400;
 		font-size: 50px;
@@ -202,7 +202,7 @@ export const WrapperWelcome = styled.div`
 	h2{
 		margin-top: 20px;
 		max-width: 600px;
-		font-family: ${({ theme }) => theme.font1}
+		font-family: ${({ theme }) => theme.font1};
 		font-style: normal;
 		font-weight: 400;
 		font-size: 20px;
@@ -227,7 +227,7 @@ export const WrapperTitle = styled.div`
 
 export const WrapperImg = styled.div`
 	margin-top: 25px;
-	position: relative:
+	position: relative;
 	margin: 0; 
 	max-width: 320px;
 	max-height: 600px;

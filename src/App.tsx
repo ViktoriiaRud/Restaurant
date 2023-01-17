@@ -3,12 +3,15 @@ import HeaderRestaurant from './components/organisms/headerRestaurant/HeaderRest
 import Locate from '././components/organisms/locate/Locate';
 import headerRestaurantData from './components/organisms/headerRestaurant/HeaderRestaurantData';
 import locateData from './components/organisms/locate/LocateData';
+import menuData from './components/organisms/menu/MenuData';
+import Menu from './components/organisms/menu/Menu'
 
 function App() {
   return (
     <div className="App">
       <HeaderRestaurant {...headerRestaurantData} />
       <Locate {...locateData} />
+      <Menu {...menuData} />
     </div>
   );
 }
