@@ -45,7 +45,6 @@ export const SpecialTitle = styled.div`
 
 export const Title1 = styled.div` 
     font-family: ${({ theme }) => theme.font2};
-    font-family: 'Cormorant Infant';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -59,3 +58,23 @@ export const Title3 = styled(Title1)``;
 
 
 
+export const Senna = styled.div` 
+    font-family: ${({ theme }) => theme.font2};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+export const DishSubtitle = styled(Senna)``;
+
+
+export const Ingredients = styled.div` 
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    color: ${({ theme }) => theme.colors.black2};
+`;

@@ -16,6 +16,8 @@ export const theme = {
         salmon: '#FA8072',
         grey8: '#5C6168',
         hover: '#CD853F',
+        moccasin: '	#FFE4B5',
+        black2: '#555555',
     },
     gap: {
         xxs: '4px',

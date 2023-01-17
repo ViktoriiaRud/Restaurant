@@ -6,6 +6,7 @@ import ImgPip from '../../../assets/icons/Pip.png';
 import ImgPhoto from '../../../assets/img/Image.png';
 import ImgFrame from '../../../assets/img/Framer.png';
 
+
 export type headerRestaurantType = {
     img: string,
     img2: string,
