@@ -66,11 +66,6 @@ export const Span = styled.div`
     background-color: ${({ theme }) => theme.colors.yellow};
 `;
 
-export const SpanSenna = styled.div`
-    max-width: 120px;
-    min-height: 2px; 
-    background-color: ${({ theme }) => theme.colors.grey};
-`;
 
 
 export const WrapperImgList = styled.div`
@@ -94,6 +89,19 @@ export const WrapperImg = styled.div`
 
 
 export const WrapperText = styled.div`
+position: relative;
     max-width: 730px;
     min-height: 84px; 
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    &:: after {
+        content: "";
+        position: absolute;
+        margin: 71px 0px 0px 400px;
+        width: 120px;
+        height: 1px; 
+        background-color: ${({ theme }) => theme.colors.grey8};
+    }
+
 `;

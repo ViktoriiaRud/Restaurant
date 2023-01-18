@@ -6,7 +6,7 @@ import { menuDataType } from './MenuData';
 import { WrapperMenu, Starters, Dish, Dessert, MenuList, MenuImg, Span } from './MenuStyles';
 import { Title, SpecialTitle, Title1, Title2, Title3, } from '../../atoms/titleSubtitle/TitleSubtitleStyles';
 import { ButtonMenu } from '../../atoms/button/ButtonStyled';
-import { SpanSenna, WrapperImgList, WrapperImg, WrapperText } from './MenuStyles';
+import { WrapperImgList, WrapperImg, WrapperText } from './MenuStyles';
 import { Senna, Ingredients, DishSubtitle } from '../../atoms/titleSubtitle/TitleSubtitleStyles';
 
 const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, card3, card1, card2 }: menuDataType) => {
@@ -34,10 +34,13 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                                         <img src={item.icon} alt="" />
                                     </WrapperImg>
                                     <WrapperText>
-                                        <DishSubtitle>{item.title}</DishSubtitle>
-                                        <Ingredients>{item.subtitle}</Ingredients>
-                                        <SpanSenna></SpanSenna>
-                                        <Senna>{item.senna}</Senna>
+                                        <div>
+                                            <DishSubtitle>{item.title}</DishSubtitle>
+                                            <Ingredients>{item.subtitle}</Ingredients>
+                                        </div>
+                                        <div>
+                                            <Senna>{item.senna}</Senna>
+                                        </div>
                                     </WrapperText>
                                 </WrapperImgList>
                             ))}
@@ -51,10 +54,13 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                                         <img src={item.icon} alt="" />
                                     </WrapperImg>
                                     <WrapperText>
-                                        <DishSubtitle>{item.title}</DishSubtitle>
-                                        <Ingredients>{item.subtitle}</Ingredients>
-                                        <SpanSenna></SpanSenna>
-                                        <Senna>{item.senna}</Senna>
+                                        <div>
+                                            <DishSubtitle>{item.title}</DishSubtitle>
+                                            <Ingredients>{item.subtitle}</Ingredients>
+                                        </div>
+                                        <div>
+                                            <Senna>{item.senna}</Senna>
+                                        </div>
                                     </WrapperText>
                                 </WrapperImgList>
                             ))}
@@ -69,10 +75,15 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                                         <img src={item.icon} alt="" />
                                     </WrapperImg>
                                     <WrapperText>
-                                        <DishSubtitle>{item.title}</DishSubtitle>
-                                        <Ingredients>{item.subtitle}</Ingredients>
-                                        <SpanSenna></SpanSenna>
-                                        <Senna>{item.senna}</Senna>
+                                        <div>
+                                            <DishSubtitle>{item.title}</DishSubtitle>
+                                            <Ingredients>{item.subtitle}</Ingredients>
+                                        </div>
+
+                                        <div>
+                                            <Senna>{item.senna}</Senna>
+                                        </div>
+
                                     </WrapperText>
                                 </WrapperImgList>
                             ))}
@@ -82,9 +93,6 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                 </div>
 
             </WrapperMenu>
-
-
-
 
         </ThemeProvider>
     </>
