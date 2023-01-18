@@ -5,6 +5,8 @@ import headerRestaurantData from './components/organisms/headerRestaurant/Header
 import locateData from './components/organisms/locate/LocateData';
 import menuData from './components/organisms/menu/MenuData';
 import Menu from './components/organisms/menu/Menu'
+import testimonialData from './components/organisms/testimonial/TestimonialData';
+import Testimonial from './components/organisms/testimonial/Testimonial';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <HeaderRestaurant {...headerRestaurantData} />
       <Locate {...locateData} />
       <Menu {...menuData} />
+      <Testimonial {...testimonialData} />
     </div>
   );
 }
