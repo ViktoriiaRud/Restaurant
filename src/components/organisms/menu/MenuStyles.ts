@@ -10,7 +10,7 @@ export const WrapperMenu = styled.section`
         display: flex;
         flex-direction: row;
         justify-content: start;
-        gap: 30px; 
+        gap: 50px; 
     }
 `;
 
@@ -28,7 +28,6 @@ export const MenuImg = styled.div`
 export const MenuList = styled.div`
     max-width: 818px;
     min-height: 1684px; 
-    background-color: red;
 `;
 
 export const Starters = styled.div`
@@ -37,22 +36,27 @@ export const Starters = styled.div`
     min-height: 635px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 50px; 
-    background-color: grey;
 
 `;
 
 export const Dish = styled.div`
+    margin-top: 60px;
     padding: 10px;
     max-width: 819px;
     min-height: 635px; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
 `;
 
 export const Dessert = styled.div`
     padding: 10px;
     max-width: 819px;
     min-height: 368px; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
 `;
 
 export const Span = styled.div`
@@ -64,29 +68,27 @@ export const Span = styled.div`
 
 export const SpanSenna = styled.div`
     max-width: 120px;
-    min-height: 1px; 
+    min-height: 2px; 
     background-color: ${({ theme }) => theme.colors.grey};
 `;
 
 
 export const WrapperImgList = styled.div`
-    background-color: ${({ theme }) => theme.colors.moccasin};
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 10px; 
     height: 85px;
-    width: 600px;
+    width: 734px;
 `;
 
 
 export const WrapperImg = styled.div`
     max-width: 84px;
-    min-height: 84px; 
-    background-color: green;
+    min-height: 84px;
     img {
         max-width: 84px;
-    min-height: 84px; 
+        min-height: 84px; 
     }
 `;
 
@@ -94,5 +96,4 @@ export const WrapperImg = styled.div`
 export const WrapperText = styled.div`
     max-width: 730px;
     min-height: 84px; 
-    background-color: yellow;
 `;

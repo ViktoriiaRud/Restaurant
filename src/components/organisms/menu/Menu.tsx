@@ -16,6 +16,7 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
             <WrapperMenu>
                 <div className="flex-menu">
                     <MenuImg>
+                        <Span></Span>
                         <Title>{title}</Title>
                         <Span></Span>
                         <SpecialTitle>{specialTitle}</SpecialTitle>
@@ -35,32 +36,49 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                                     <WrapperText>
                                         <DishSubtitle>{item.title}</DishSubtitle>
                                         <Ingredients>{item.subtitle}</Ingredients>
-                                        <SpanSenna>{item.senna}</SpanSenna>
-                                        <Senna></Senna>
+                                        <SpanSenna></SpanSenna>
+                                        <Senna>{item.senna}</Senna>
                                     </WrapperText>
                                 </WrapperImgList>
                             ))}
                         </Starters>
 
-
-
-
                         <Title2>{title2}</Title2>
                         <Dish>
-
+                            {card2.map((item, index) => (
+                                <WrapperImgList key={index}>
+                                    <WrapperImg>
+                                        <img src={item.icon} alt="" />
+                                    </WrapperImg>
+                                    <WrapperText>
+                                        <DishSubtitle>{item.title}</DishSubtitle>
+                                        <Ingredients>{item.subtitle}</Ingredients>
+                                        <SpanSenna></SpanSenna>
+                                        <Senna>{item.senna}</Senna>
+                                    </WrapperText>
+                                </WrapperImgList>
+                            ))}
 
                         </Dish>
 
-
                         <Title3>{title3}</Title3>
                         <Dessert>
-
+                            {card3.map((item, index) => (
+                                <WrapperImgList key={index}>
+                                    <WrapperImg>
+                                        <img src={item.icon} alt="" />
+                                    </WrapperImg>
+                                    <WrapperText>
+                                        <DishSubtitle>{item.title}</DishSubtitle>
+                                        <Ingredients>{item.subtitle}</Ingredients>
+                                        <SpanSenna></SpanSenna>
+                                        <Senna>{item.senna}</Senna>
+                                    </WrapperText>
+                                </WrapperImgList>
+                            ))}
 
                         </Dessert>
                     </MenuList>
-
-
-
                 </div>
 
             </WrapperMenu>

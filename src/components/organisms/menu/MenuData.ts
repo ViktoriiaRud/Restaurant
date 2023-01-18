@@ -4,7 +4,7 @@ import ImgSpring from '../../../assets/img/Spring.png';
 import ImgSoup from '../../../assets/img/Soup.png';
 import ImgTomato from '../../../assets/img/Tomato.png';
 import ImgGrilled from '../../../assets/img/Grilled.png';
-import ImgRoast from '../../../assets/img/Roast.jpg';
+import ImgImagerosb from '../../../assets/img/Imagerosb.png';
 import ImgMarkkehs from '../../../assets/img/Markkehs.png';
 import ImgSpisy from '../../../assets/img/Spisy.png';
 import ImgSalad from '../../../assets/img/salad4.png';
@@ -98,7 +98,7 @@ export const menuData: menuDataType = {
         },
 
         {
-            icon: ImgRoast,
+            icon: ImgImagerosb,
             title: "Roast Beef with Vegetable",
             subtitle: "Green beans, rib eye, olive oil, beef",
             senna: "$20",
