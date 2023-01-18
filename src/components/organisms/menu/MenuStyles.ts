@@ -9,8 +9,8 @@ export const WrapperMenu = styled.section`
         min-height: 1724px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        gap: 50px; 
+        justify-content: start;
+        gap: 30px; 
     }
 `;
 
@@ -73,7 +73,7 @@ export const WrapperImgList = styled.div`
     background-color: ${({ theme }) => theme.colors.moccasin};
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     gap: 10px; 
     height: 85px;
     width: 600px;
