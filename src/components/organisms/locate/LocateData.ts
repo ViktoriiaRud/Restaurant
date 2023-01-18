@@ -4,6 +4,7 @@ import ImgList from '../../../assets/icons/List.jpg';
 import ImgTable from '../../../assets/img/Table.jpg';
 import ImgAutograph from '../../../assets/icons/Autograph.jpg';
 
+
 export type locateDataType = {
     photo: string,
     img1: string,
@@ -12,8 +13,8 @@ export type locateDataType = {
     subtitle2: string,
     h5: string,
     array: arrayData[],
-
 }
+
 
 export type arrayData = {
     titleData: string,
@@ -66,6 +67,7 @@ export const locateData: locateDataType = {
     h5: "JOSEFINE",
 
 }
+
 
 export default locateData;
 

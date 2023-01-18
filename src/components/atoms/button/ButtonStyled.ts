@@ -35,10 +35,12 @@ export const Button = styled.button`
         }
 `;
 
+
 export const ButtonOrange = styled(Button)`
     background: ${({ theme }) => theme.colors.yellow};
     color: ${({ theme }) => theme.colors.black};
 `;
+
 
 export const ButtonTitle = styled(Button)`
     margin: 23px 0px 14px 39px;
@@ -51,13 +53,13 @@ export const ButtonTitle = styled(Button)`
     } 
 `;
 
+
 export const ButtonMenu = styled(Button)`
     margin: 23px 0px 14px 39px;
     background: ${({ theme }) => theme.colors.transparent};
     width: 230px; 
     color: ${({ theme }) => theme.colors.yellow};
      
-    
     ${breakpoint.md} {
         margin: 30px 0px 14px 39px;
     } 

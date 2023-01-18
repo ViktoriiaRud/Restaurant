@@ -7,11 +7,11 @@ import { ThemeProvider } from "styled-components";
 import { theme } from './../../../theme/theme';
 import { headerRestaurantType } from './HeaderRestaurantData'
 
+
 const HeaderRestaurant = ({ img, img2, img3, imgSocial, links, title, subtitle }: headerRestaurantType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
-
             <WrapperBanner>
                 <WrapperLogo>
                     <Button>Call - 123 456 789</Button>
@@ -59,9 +59,7 @@ const HeaderRestaurant = ({ img, img2, img3, imgSocial, links, title, subtitle }
             </WrapperBanner>
         </ThemeProvider>
     </>
-
 }
-
 
 
 

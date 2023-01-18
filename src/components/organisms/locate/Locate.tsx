@@ -6,6 +6,7 @@ import { WrapperLocate, LocateCard, LocateItem, WrapperStory, StoryPhoto, Wrappe
 import { TitleStory, DataTitle } from '../../../components/atoms/titleSubtitle/TitleSubtitleStyles';
 import { locateDataType } from './LocateData';
 
+
 const Locate = ({ img1, photo, items, title2, subtitle2, h5, array, }: locateDataType) => {
     return <>
         <ThemeProvider theme={theme}>
@@ -53,5 +54,6 @@ const Locate = ({ img1, photo, items, title2, subtitle2, h5, array, }: locateDat
         </ThemeProvider>
     </>
 }
+
 
 export default Locate; 

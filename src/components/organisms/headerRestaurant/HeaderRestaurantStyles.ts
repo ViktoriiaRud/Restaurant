@@ -8,8 +8,8 @@ export const WrapperBanner = styled.section`
 	min-height: 972px;
 `;
 
-export const WrapperLogo = styled.div`
 
+export const WrapperLogo = styled.div`
 	padding: 5px 5px;
 	display: flex;
 	flex-direction: column;
@@ -33,6 +33,7 @@ export const WrapperLogo = styled.div`
 	}
 `;
 
+
 export const Logo = styled.div`
 	margin: 0 auto;
 	margin-top: 20px;
@@ -45,6 +46,7 @@ export const Logo = styled.div`
 		max-width: 378px;
 	}
 `;
+
 
 export const Span = styled.span`
 	margin-top: 15px;
@@ -68,6 +70,7 @@ export const Span = styled.span`
 	}
 `;
 
+
 export const WrapperLinkSocial = styled.div`
     margin: 0 auto;
 	display: flex;
@@ -83,6 +86,7 @@ export const WrapperLinkSocial = styled.div`
 	}
 `;
 
+
 export const WrapperLink = styled.div`
 
 	${breakpoint.lg} {
@@ -90,6 +94,7 @@ export const WrapperLink = styled.div`
 		max-height: 70px;
 	}
 `;
+
 
 export const WrapperSocial = styled.div`
     margin: 0 auto;
@@ -114,6 +119,7 @@ export const WrapperSocial = styled.div`
 	}
 `;
 
+
 export const LinkYellow = styled.a`
 	font-family: ${({ theme }) => theme.font1};
 	font-style: normal;
@@ -124,9 +130,11 @@ export const LinkYellow = styled.a`
 	color: ${({ theme }) => theme.colors.yellow};
 `;
 
+
 export const LinkWhite = styled(LinkYellow)`
 	color: #FFFFFF;
 `;
+
 
 export const Link = styled.ul`
     padding: 51px;
@@ -150,6 +158,7 @@ export const Link = styled.ul`
 	}
 	}
 `;
+
 
 export const WrapperWelcome = styled.div`
     position: relative;
@@ -222,8 +231,9 @@ export const WrapperWelcome = styled.div`
 export const WrapperTitle = styled.div`
 	margin: 0; 
 	max-width: 665px;
-	}
+	
 `;
+
 
 export const WrapperImg = styled.div`
 	margin-top: 25px;
@@ -246,7 +256,9 @@ export const WrapperImg = styled.div`
 		}
 	}
 	}
-	`;
+`;
+
+
 export const WrapperImg2 = styled.div`
 	margin: 0; 
 	max-width: 250px;
@@ -258,7 +270,7 @@ export const WrapperImg2 = styled.div`
 			width: 100%;	
 		}
 	}
-	`;
+`;
 
 export const Span1 = styled.span`
 	display: none;
@@ -271,8 +283,8 @@ export const Span1 = styled.span`
 	background-color: ${({ theme }) => theme.colors.grey2};
 	mix-blend-mode: normal;
 	}
-
 `;
+
 
 export const Span2 = styled.span`
 	display: none;
@@ -285,8 +297,8 @@ export const Span2 = styled.span`
 		background-color: ${({ theme }) => theme.colors.grey2};
 		mix-blend-mode: normal;
 	}
-
 `;
+
 
 export const Span3 = styled.span`
 	display: none;
@@ -299,6 +311,5 @@ export const Span3 = styled.span`
 		background-color: ${({ theme }) => theme.colors.grey2};
 		mix-blend-mode: normal;
 	}
-
 `;
 

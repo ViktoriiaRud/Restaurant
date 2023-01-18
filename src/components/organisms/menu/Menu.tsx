@@ -6,8 +6,9 @@ import { menuDataType } from './MenuData';
 import { WrapperMenu, Starters, Dish, Dessert, MenuList, MenuImg, Span } from './MenuStyles';
 import { Title, SpecialTitle, Title1, Title2, Title3, } from '../../atoms/titleSubtitle/TitleSubtitleStyles';
 import { ButtonMenu } from '../../atoms/button/ButtonStyled';
-import { WrapperImgList, WrapperImg, WrapperText } from './MenuStyles';
+import { WrapperImgList, WrapperImg, WrapperText, WrapperSenna } from './MenuStyles';
 import { Senna, Ingredients, DishSubtitle } from '../../atoms/titleSubtitle/TitleSubtitleStyles';
+
 
 const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, card3, card1, card2 }: menuDataType) => {
     return <>
@@ -38,10 +39,10 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                                             <DishSubtitle>{item.title}</DishSubtitle>
                                             <Ingredients>{item.subtitle}</Ingredients>
                                         </div>
-                                        <div>
-                                            <Senna>{item.senna}</Senna>
-                                        </div>
                                     </WrapperText>
+                                    <WrapperSenna>
+                                        <Senna>{item.senna}</Senna>
+                                    </WrapperSenna>
                                 </WrapperImgList>
                             ))}
                         </Starters>
@@ -58,13 +59,12 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                                             <DishSubtitle>{item.title}</DishSubtitle>
                                             <Ingredients>{item.subtitle}</Ingredients>
                                         </div>
-                                        <div>
-                                            <Senna>{item.senna}</Senna>
-                                        </div>
                                     </WrapperText>
+                                    <WrapperSenna>
+                                        <Senna>{item.senna}</Senna>
+                                    </WrapperSenna>
                                 </WrapperImgList>
                             ))}
-
                         </Dish>
 
                         <Title3>{title3}</Title3>
@@ -79,21 +79,16 @@ const Menu = ({ img, title, h4, specialTitle, button, title1, title2, title3, ca
                                             <DishSubtitle>{item.title}</DishSubtitle>
                                             <Ingredients>{item.subtitle}</Ingredients>
                                         </div>
-
-                                        <div>
-                                            <Senna>{item.senna}</Senna>
-                                        </div>
-
                                     </WrapperText>
+                                    <WrapperSenna>
+                                        <Senna>{item.senna}</Senna>
+                                    </WrapperSenna>
                                 </WrapperImgList>
                             ))}
-
                         </Dessert>
                     </MenuList>
                 </div>
-
             </WrapperMenu>
-
         </ThemeProvider>
     </>
 }

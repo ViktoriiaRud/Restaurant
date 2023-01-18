@@ -8,14 +8,15 @@ export const WrapperLocate = styled.section`
 
     ${breakpoint.md} {
         max-width: 578px;
-       }
+    }
 
     ${breakpoint.lg} {
         padding: 75px 0px 10px 26px;
         max-width: 1440px;
         min-height: 300px;
-       }
+    }
 `;
+
 
 export const LocateCard = styled.div`
     margin-top: 45px;
@@ -26,13 +27,14 @@ export const LocateCard = styled.div`
     ${breakpoint.md} {
         justify-content: space-between;
         flex-direction: row;
-       }
+    }
 
    ${breakpoint.lg} {
-    justify-content: space-between;
-    flex-direction: row;
-   }
+        justify-content: space-between;
+        flex-direction: row;
+    }
 `;
+
 
 export const LocateItem = styled.div`
     max-width: 440px;
@@ -50,31 +52,34 @@ export const LocateItem = styled.div`
         ${breakpoint.lg} {
             display: flex;
             flex-direction: row;
-           }
+        }
     }
     
     h3 {
         text-align: center;
+
         ${breakpoint.lg} {
             text-align: start;
             padding: 10px 62px 0px 10px;
             float: right;
             width: 250px;
-           }
+        }
     }
+
     h4 {
         text-align: center;
         float: right;
+        
         ${breakpoint.md} {
             text-align: start;
             padding: 0px 12px 5px 7px;
             margin: 20px 0px 10px 0px;
-           }
+        }
 
-           ${breakpoint.lg} {
+        ${breakpoint.lg} {
             padding: 0px 12px 5px 75px;
             margin: -29px 7px 29px 19px;
-           }
+        }
     }
 `;
 
@@ -91,8 +96,7 @@ export const WrapperStory = styled.div`
 
 export const StoryPhoto = styled.div`
     padding: 30px;
-    max-width: 700px;
-    
+    max-width: 700px;   
 `;
 
 
@@ -104,7 +108,7 @@ export const WrapperStoryTitle = styled.div`
     
     ${breakpoint.md} {
         padding: 0px;
-       }
+    }
 `;
 
 
@@ -119,7 +123,7 @@ export const WrapperData = styled.div`
 
     ${breakpoint.md} {
         padding: 0px;
-       }
+    }
 `;
 
 
@@ -139,5 +143,5 @@ export const Autograph = styled.div`
 
     ${breakpoint.lg} {
         padding: 0px;
-       }
-    `;
+    }
+`;

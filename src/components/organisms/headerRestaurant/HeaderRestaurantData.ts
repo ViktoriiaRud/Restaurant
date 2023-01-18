@@ -15,8 +15,8 @@ export type headerRestaurantType = {
     imgSocial: string[],
     title: string,
     subtitle: string,
-
 }
+
 
 export type LinkType = {
     href: string,

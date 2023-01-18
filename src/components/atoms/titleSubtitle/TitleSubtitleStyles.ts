@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../../theme';
 
+
 export const TitleStory = styled.div` 
     text-align: center;
     font-family: 'Cormorant Infant';
@@ -16,7 +17,10 @@ export const TitleStory = styled.div`
        }
 `;
 
+
+
 export const DataTitle = styled(TitleStory)``;
+
 
 export const Title = styled.div` 
     font-family: ${({ theme }) => theme.font1};
@@ -52,10 +56,10 @@ export const Title1 = styled.div`
     letter-spacing: 0.2px;
     color: ${({ theme }) => theme.colors.black};
 `;
+
+
 export const Title2 = styled(Title1)``;
 export const Title3 = styled(Title1)``;
-
-
 
 
 export const Senna = styled.div` 
@@ -66,6 +70,7 @@ export const Senna = styled.div`
     line-height: 42px;
     color: ${({ theme }) => theme.colors.black};
 `;
+
 
 export const DishSubtitle = styled(Senna)``;
 

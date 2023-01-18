@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const WrapperMenu = styled.section`
     padding: 30px;
     max-width: 1440px;
@@ -10,9 +11,10 @@ export const WrapperMenu = styled.section`
         display: flex;
         flex-direction: row;
         justify-content: start;
-        gap: 50px; 
+        gap: 50px;
     }
 `;
+
 
 export const MenuImg = styled.div`
     max-width: 491px;
@@ -25,10 +27,12 @@ export const MenuImg = styled.div`
     }
 `;
 
+
 export const MenuList = styled.div`
     max-width: 818px;
     min-height: 1684px; 
 `;
+
 
 export const Starters = styled.div`
     padding: 10px;
@@ -37,8 +41,8 @@ export const Starters = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px; 
-
 `;
+
 
 export const Dish = styled.div`
     margin-top: 60px;
@@ -47,8 +51,9 @@ export const Dish = styled.div`
     min-height: 635px; 
     display: flex;
     flex-direction: column;
-    gap: 50px; 
+    gap: 50px;  
 `;
+
 
 export const Dessert = styled.div`
     padding: 10px;
@@ -59,6 +64,7 @@ export const Dessert = styled.div`
     gap: 50px; 
 `;
 
+
 export const Span = styled.div`
     margin: 0px 4px 12px 0px;
     max-width: 60px;
@@ -67,8 +73,8 @@ export const Span = styled.div`
 `;
 
 
-
 export const WrapperImgList = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -89,13 +95,13 @@ export const WrapperImg = styled.div`
 
 
 export const WrapperText = styled.div`
-position: relative;
+    position: relative;
     max-width: 730px;
     min-height: 84px; 
     display: flex;
     justify-content: space-between;
-    gap: 150px;
-    &:: after {
+    gap: 50px;
+    &:: before {
         content: "";
         position: absolute;
         margin: 71px 0px 0px 400px;
@@ -103,5 +109,12 @@ position: relative;
         height: 1px; 
         background-color: ${({ theme }) => theme.colors.grey8};
     }
+`;
 
+
+export const WrapperSenna = styled.div`
+    position: absolute;
+    margin: 36px 27px 15px 646px;
+    max-width: 80px;
+    min-height: 80px;  
 `;

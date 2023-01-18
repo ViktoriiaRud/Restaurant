@@ -10,6 +10,7 @@ import ImgSpisy from '../../../assets/img/Spisy.png';
 import ImgSalad from '../../../assets/img/salad4.png';
 import ImgLemon from '../../../assets/img/Lemon.png';
 
+
 export type menuDataType = {
     img: string,
     title: string,
@@ -22,8 +23,8 @@ export type menuDataType = {
     card1: menuStartersType[],
     card2: menuDishType[],
     card3: menuDessertType[],
-
 }
+
 
 export type menuStartersType = {
     icon: string,
@@ -31,6 +32,7 @@ export type menuStartersType = {
     subtitle: string,
     senna: string,
 }
+
 
 export type menuDishType = {
     icon: string,
