@@ -4,15 +4,21 @@ import { theme } from '../../../theme/theme';
 import { ThemeProvider } from 'styled-components';
 import { testimonialType } from './TestimonialData';
 import { WrapperColor } from './TestimonialStyles';
-import { WrapperTestimonial, TestimonialCard, TestimonialImg } from './TestimonialStyles';
+import { WrapperTestimonial, TestimonialCard, TestimonialImg, Span } from './TestimonialStyles';
+import { TestDescription, TestimonialSubtitle, TestimonialTitle } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
 
-const Testimonial = ({ img }: testimonialType) => {
+const Testimonial = ({ img, title, subtitle, description }: testimonialType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
             <WrapperColor>
                 <WrapperTestimonial>
                     <TestimonialCard>
+                        <Span></Span>
+                        <TestimonialTitle>{title}</TestimonialTitle>
+                        <Span></Span>
+                        <TestimonialSubtitle>{subtitle}</TestimonialSubtitle>
+                        <TestDescription>{description}</TestDescription>
 
                     </TestimonialCard>
                     <TestimonialImg>
