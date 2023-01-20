@@ -6,6 +6,9 @@ import { testimonialType } from './TestimonialData';
 import { WrapperColor } from './TestimonialStyles';
 import { WrapperTestimonial, TestimonialCard, TestimonialImg, Span } from './TestimonialStyles';
 import { TestDescription, TestimonialSubtitle, TestimonialTitle } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
+import MyCarousel from '../../molecules/carousel/Carousel';
+import carouselData from '../../molecules/carousel/CarouselData';
+
 
 const Testimonial = ({ img, title, subtitle, description }: testimonialType) => {
     return <>
@@ -19,7 +22,7 @@ const Testimonial = ({ img, title, subtitle, description }: testimonialType) => 
                         <Span></Span>
                         <TestimonialSubtitle>{subtitle}</TestimonialSubtitle>
                         <TestDescription>{description}</TestDescription>
-
+                        <MyCarousel {...carouselData} />
                     </TestimonialCard>
                     <TestimonialImg>
                         <img src={img} alt="img" />
