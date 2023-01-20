@@ -7,7 +7,7 @@ import { carouselDataType } from './CarouselData';
 import { Slider } from './CarouselStyles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
-
+import { Text, WrapperImg, Card, WrapperIcon } from './CarouselStyles';
 
 
 
@@ -20,20 +20,21 @@ const MyCarousel = ({ item }: carouselDataType) => {
                 <Carousel>
                     {item.map((item, index) => (
                         <Carousel.Item>
-
-                            <div key={index}>
-                                <div>
-                                    <img src={item.icon} alt="" />
+                            <Card key={index}>
+                                <WrapperImg>
                                     <img src={item.img} alt="" />
-                                </div>
+                                </WrapperImg>
+                                <WrapperIcon>
+                                    <img src={item.icon} alt="" />
+                                </WrapperIcon>
                                 <div>
-                                    <div>
+                                    <Text>
                                         <h3>{item.name}</h3>
                                         <h4>{item.city}</h4>
-                                    </div>
+                                        <h5>{item.title}</h5>
+                                    </Text>
                                 </div>
-                                <h5>{item.title}</h5>
-                            </div>
+                            </Card>
                         </Carousel.Item>
                     ))}
                 </Carousel>

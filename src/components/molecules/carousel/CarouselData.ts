@@ -1,7 +1,7 @@
 import Img1 from '../../../assets/img/Girl.png';
 import Img2 from '../../../assets/img/Man.png';
 import Img3 from '../../../assets/img/Man2.png';
-import Icon from '../../../assets/icons/Quotes.jpg'
+import Icon from '../../../assets/icons/Vector.png';
 
 
 
