@@ -18,7 +18,6 @@ export const TitleStory = styled.div`
 `;
 
 
-
 export const DataTitle = styled(TitleStory)``;
 
 
@@ -116,4 +115,82 @@ export const TestDescription = styled.div`
     line-height: 30px;
     letter-spacing: 0.2px;
     color: ${({ theme }) => theme.colors.white};
+`;
+
+
+export const OffersSubtitle = styled.div` 
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+export const OffersTitle = styled.div` 
+    font-family: ${({ theme }) => theme.font2};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+export const OffersDescription = styled.div` 
+    margin-top: 12px;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.black2};
+`;
+
+export const OffersDescription2 = styled(OffersDescription)``;
+
+
+export const SubtitleCard = styled.div` 
+    margin-top: 12px;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+export const TitleCard = styled.div` 
+    margin-top: 12px;
+    font-family: ${({ theme }) => theme.font2};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+export const DescriptionCard = styled.div` 
+    margin-top: 12px;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.black2};
 `;
