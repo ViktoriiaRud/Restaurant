@@ -21,12 +21,15 @@ const MyCarousel = ({ item }: carouselDataType) => {
                     {item.map((item, index) => (
                         <Carousel.Item>
                             <Card key={index}>
-                                <WrapperImg>
-                                    <img src={item.img} alt="" />
-                                </WrapperImg>
-                                <WrapperIcon>
-                                    <img src={item.icon} alt="" />
-                                </WrapperIcon>
+                                <div>
+                                    <WrapperImg>
+                                        <img src={item.img} alt="" />
+                                    </WrapperImg>
+                                    <WrapperIcon>
+                                        <img src={item.icon} alt="" />
+                                    </WrapperIcon>
+                                </div>
+
                                 <div>
                                     <Text>
                                         <h3>{item.name}</h3>

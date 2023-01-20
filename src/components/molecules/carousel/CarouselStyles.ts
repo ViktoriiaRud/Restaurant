@@ -7,19 +7,27 @@ export const Slider = styled.div`
 
 
 export const Text = styled.div`
-    background-color: ${({ theme }) => theme.colors.yellow};
+    margin-top: 50px;
+    width: 650px;
+    height: 385px;
 `;
 
 
 export const Card = styled.div`
-    width: 544px;
-    heigh: 285px;
-    margin: 4px 34px 22px 470px;
+    margin-top: 20px;
+    background-color: ${({ theme }) => theme.colors.grey8};
+    width: 825px;
+    margin: 102px 38px 100px 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 `;
 
 
 export const WrapperImg = styled.div`
     position: relative;
+    margin: 28px 25px 18px 46px;
+    
         img {
             width: 113px;
             heigh: 113px;
@@ -33,7 +41,7 @@ export const WrapperIcon = styled.div`
     heigh: 30px;
     border-radius: 100%;
     position: absolute;
-    margin: -108px 0px 0px 0px;
+    margin: -113px 0px 0px 33px;
     border: 2px solid #292E36;
     background-color: ${({ theme }) => theme.colors.yellow}; 
         img {
