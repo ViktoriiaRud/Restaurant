@@ -3,13 +3,10 @@ import GlobalStyle from '../../../theme/globalStyles';
 import { theme } from '../../../theme/theme';
 import { ThemeProvider } from 'styled-components';
 import { carouselDataType } from './CarouselData';
-
 import { Slider } from './CarouselStyles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
-import { Text, WrapperImg, Card, WrapperIcon } from './CarouselStyles';
-
-
+import { Text, WrapperImg, Card, WrapperIcon, Name, City, Description, Span } from './CarouselStyles';
 
 
 const MyCarousel = ({ item }: carouselDataType) => {
@@ -29,12 +26,12 @@ const MyCarousel = ({ item }: carouselDataType) => {
                                         <img src={item.icon} alt="" />
                                     </WrapperIcon>
                                 </div>
-
                                 <div>
                                     <Text>
-                                        <h3>{item.name}</h3>
-                                        <h4>{item.city}</h4>
-                                        <h5>{item.title}</h5>
+                                        <Name>{item.name}</Name>
+                                        <City>{item.city}</City>
+                                        <Span></Span>
+                                        <Description>{item.title}</Description>
                                     </Text>
                                 </div>
                             </Card>
