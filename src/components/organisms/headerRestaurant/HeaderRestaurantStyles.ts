@@ -5,7 +5,7 @@ import { theme } from '../../../theme/theme';
 
 export const WrapperBanner = styled.section`
 	background-color: ${({ theme }) => theme.colors.grey};
-	min-height: 972px;
+	min-height: 981px;
 `;
 
 

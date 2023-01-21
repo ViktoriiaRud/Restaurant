@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './../../../theme/theme';
 import { offersDataType } from './OffersData';
 import { OffersSubtitle, OffersTitle, OffersDescription, OffersDescription2, SubtitleCard, TitleCard, DescriptionCard } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
-import { SpanUp, Span, WrapperOffers, WrapperCards, Card, Card2 } from './OffersStyles';
+import { SpanUp, Span, WrapperOffers, WrapperCards, Card, SpanUpSub, SpanSub } from './OffersStyles';
 
 
 const Offers = ({ title, subtitle, description, description2, items }: offersDataType) => {
@@ -24,27 +24,25 @@ const Offers = ({ title, subtitle, description, description2, items }: offersDat
                             <div className="img-card">
                                 <img src={item.card} alt="img" />
                             </div>
-
                             <div className="dish-img">
                                 <img src={item.img} alt="img" />
                             </div>
-
                             <div className="senna-bg">
                                 <img src={item.icons} alt="img" />
                             </div>
                             <div className="senna">
                                 <img src={item.icon} alt="img" />
                             </div>
-
-
-
-                            <div></div>
-                            <span></span>
-                            <h6>{item.senna}</h6>
-                            <span></span>
-                            <SubtitleCard>{item.subtitle}</SubtitleCard>
-                            <TitleCard>{item.title}</TitleCard>
-                            <DescriptionCard>{item.description}</DescriptionCard>
+                            <div className="senna-dollar">
+                                <h6>{item.senna}</h6>
+                            </div>
+                            <div className="text-senna">
+                                <SpanUpSub></SpanUpSub>
+                                <SubtitleCard>{item.subtitle}</SubtitleCard>
+                                <SpanSub></SpanSub>
+                                <TitleCard>{item.title}</TitleCard>
+                                <DescriptionCard>{item.description}</DescriptionCard>
+                            </div>
                         </Card>
                     ))}
                 </WrapperCards>
@@ -53,8 +51,6 @@ const Offers = ({ title, subtitle, description, description2, items }: offersDat
     </>
 
 }
-
-
 
 
 export default Offers;
