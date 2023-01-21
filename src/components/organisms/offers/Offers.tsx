@@ -21,9 +21,24 @@ const Offers = ({ title, subtitle, description, description2, items }: offersDat
                 <WrapperCards>
                     {items.map((item, index) => (
                         <Card key={index}>
-                            <img src={item.card} alt="img" />
-                            <img src={item.img} alt="img" />
-                            <img src={item.icon} alt="img" />
+                            <div className="img-card">
+                                <img src={item.card} alt="img" />
+                            </div>
+
+                            <div className="dish-img">
+                                <img src={item.img} alt="img" />
+                            </div>
+
+                            <div className="senna-bg">
+                                <img src={item.icons} alt="img" />
+                            </div>
+                            <div className="senna">
+                                <img src={item.icon} alt="img" />
+                            </div>
+
+
+
+                            <div></div>
                             <span></span>
                             <h6>{item.senna}</h6>
                             <span></span>

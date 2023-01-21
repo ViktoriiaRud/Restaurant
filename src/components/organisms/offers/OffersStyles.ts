@@ -22,13 +22,14 @@ margin: 3px 20px 50px 600px;
 
 
 export const WrapperCards = styled.div`
+padding: 50px;
+margin-top: 50px;
 max-width: 1360px;
 height: 410px;
 display: flex;
 flex-direction: row;
+justify-content: space-between;
 flex-wrap: wrap;
-gap: 50px;
-
 h6 {
     font-family: 'Cormorant Infant';
     font-style: normal;
@@ -36,15 +37,36 @@ h6 {
     font-size: 60px;
     line-height: 66px;
     letter-spacing: 0.2px;
-    color: #292E36;
+    color: ${({ theme }) => theme.colors.yellow};
 }
 `;
 
 
 export const Card = styled.div`
-margin-top: 0px;
-max-width: 550px;
-height: 350px;
+    margin-top: 0px;
+    max-width: 550px;
+    height: 350px;
+    .img-card {
+        position: relative;
+    }
+
+    .dish-img {
+        position:absolute;
+        margin: 20px 10px 10px 20px;
+        z-index: 0;
+    }
+
+    .senna {
+        position:absolute;
+        margin: -220px 10px 10px 20px;
+        z-index: 0;
+    }
+
+    .senna-bg {
+        position:absolute;
+        margin: -200px 10px 10px 20px;
+        z-index: 0;
+    }
 `;
 
 

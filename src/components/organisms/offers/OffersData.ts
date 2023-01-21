@@ -1,7 +1,9 @@
 import ImgBlue from '../../../assets/img/Blue.png';
 import ImgGrey from '../../../assets/img/Grey.png';
-import ImgWhite from '../../../assets/img/White.jpg';
-import ImgBlack from '../../../assets/img/Black.jpg';
+import ImgWhite from '../../../assets/img/Vector2.png';
+import ImgBlack from '../../../assets/img/Vector4.png';
+import ImgGreyBg from '../../../assets/img/Vector3.png';
+import ImgBlueBg from '../../../assets/img/Vector1.png';
 import ImgGamburg from '../../../assets/img/Gamburg.png';
 import ImgPizza from '../../../assets/img/Pizza.png';
 
@@ -24,6 +26,7 @@ export type cardType = {
     subtitle: string,
     title: string,
     description: string,
+    icons: string,
 }
 
 
@@ -40,6 +43,7 @@ export const offersData: offersDataType = {
             card: ImgBlue,
             img: ImgGamburg,
             icon: ImgWhite,
+            icons: ImgBlueBg,
             subtitle: "50% Offer Going",
             title: "Chicken Burger",
             description: "Chicken burger with the tasty toppings and leaves.",
@@ -50,6 +54,7 @@ export const offersData: offersDataType = {
             card: ImgGrey,
             img: ImgPizza,
             icon: ImgBlack,
+            icons: ImgGreyBg,
             subtitle: "50% Offer Going",
             title: "Chicken Pizza",
             description: "Pizza with multiple flavor and the toping are mixed.",
