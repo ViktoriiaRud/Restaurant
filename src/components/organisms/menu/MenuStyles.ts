@@ -29,13 +29,14 @@ export const MenuImg = styled.div`
 
 
 export const MenuList = styled.div`
+margin-top: 53px;
     max-width: 818px;
     min-height: 1684px; 
 `;
 
 
 export const Starters = styled.div`
-    padding: 10px;
+    padding: 50px 10px 10px 10px;
     max-width: 819px;
     min-height: 635px; 
     display: flex;
@@ -45,7 +46,7 @@ export const Starters = styled.div`
 
 
 export const Dish = styled.div`
-    margin-top: 60px;
+    margin-top: 50px;
     padding: 10px;
     max-width: 819px;
     min-height: 635px; 
@@ -56,6 +57,7 @@ export const Dish = styled.div`
 
 
 export const Dessert = styled.div`
+    margin-top: 50px;
     padding: 10px;
     max-width: 819px;
     min-height: 368px; 

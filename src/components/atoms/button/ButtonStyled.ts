@@ -50,6 +50,7 @@ export const ButtonTitle = styled(Button)`
     
     ${breakpoint.md} {
         margin: 30px 0px 14px 39px;
+        width: 255px; 
     } 
 `;
 
@@ -62,6 +63,15 @@ export const ButtonMenu = styled(Button)`
      
     ${breakpoint.md} {
         margin: 30px 0px 14px 39px;
+        width: 255px;
     } 
+`;
+
+
+export const ButtonPopular = styled(Button)`
+    margin: 50px 17px 29px 510px;
+    background: ${({ theme }) => theme.colors.transparent};
+    width: 255px; 
+    color: ${({ theme }) => theme.colors.yellow};
 `;
 

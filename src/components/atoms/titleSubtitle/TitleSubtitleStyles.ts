@@ -194,3 +194,29 @@ export const DescriptionCard = styled.div`
     letter-spacing: 0.2px;
     color: ${({ theme }) => theme.colors.black2};
 `;
+
+
+export const SubtitlePopular = styled.div` 
+    font-family: ${({ theme }) => theme.font2};
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+export const SennaPopular = styled(SubtitlePopular)``;
+
+
+export const DescriptionPopular = styled(DescriptionCard)` 
+    margin-top: 12px;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.black2};
+`;
