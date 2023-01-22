@@ -29,30 +29,30 @@ export const menuPopularData: menuPopularDataType = {
     cards: [
         {
             img: ImgRoast,
-            subtitle: "",
-            senna: "",
-            description: "",
+            subtitle: "Chicken Manjoori",
+            senna: "$15",
+            description: "Dish relished by all age groups as a starter dish at parties.",
         },
 
         {
             img: ImgHotdog,
-            subtitle: "",
-            senna: "",
-            description: "",
+            subtitle: "Hotdog",
+            senna: "$10",
+            description: "Grilled sausage served in the slit of a partially sliced bun.",
         },
 
         {
             img: ImgFresh,
-            subtitle: "",
-            senna: "",
-            description: "",
+            subtitle: "Fresh Salmon",
+            senna: "$5",
+            description: "Beat the health blues with our Super Immune Blue Juice Recipe.",
         },
 
         {
             img: ImgSandwich,
-            subtitle: "",
-            senna: "",
-            description: "",
+            subtitle: "Veg Burger",
+            senna: "$10",
+            description: "Burgers may be made from ingredients like beans.",
         },
     ],
 }
