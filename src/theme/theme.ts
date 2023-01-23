@@ -18,6 +18,8 @@ export const theme = {
         hover: '#CD853F',
         moccasin: '#FFE4B5',
         black2: '#555555',
+        grey10: '#323841',
+
     },
     gap: {
         xxs: '4px',

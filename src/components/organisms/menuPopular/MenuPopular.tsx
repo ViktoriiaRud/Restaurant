@@ -9,6 +9,8 @@ import { SpanUp, Span } from './../offers/OffersStyles';
 import { WrapperCard, CardImg, CardText, WrapperCards } from './MenuPopularStyles';
 import { SubtitlePopular, DescriptionPopular, SennaPopular } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
 import { ButtonPopular } from '../../atoms/button/ButtonStyled';
+import Grey from "../../molecules/grey/Grey";
+import { greyData } from '../../molecules/grey/GreyData';
 
 const MenuPopular = ({ subtitle, title, description1, description2, cards }: menuPopularDataType) => {
     return <>
@@ -39,6 +41,8 @@ const MenuPopular = ({ subtitle, title, description1, description2, cards }: men
                     ))}
                 </WrapperCards>
                 <ButtonPopular>See all dishes</ButtonPopular>
+
+                <Grey {...greyData} />
             </WrapperMenuPopular>
         </ThemeProvider>
     </>

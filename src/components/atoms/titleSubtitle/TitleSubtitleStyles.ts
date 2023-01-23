@@ -225,3 +225,17 @@ export const DescriptionPopular = styled(DescriptionCard)`
     letter-spacing: 0.2px;
     color: ${({ theme }) => theme.colors.black2};
 `;
+
+
+
+
+export const GreyDescription = styled.div` 
+    margin-top: 12px;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.black2};
+`;
