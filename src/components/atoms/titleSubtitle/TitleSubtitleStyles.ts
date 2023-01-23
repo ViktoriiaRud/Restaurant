@@ -47,6 +47,7 @@ export const SpecialTitle = styled.div`
 
 
 export const Title1 = styled.div` 
+    text-align: center;
     font-family: ${({ theme }) => theme.font2};
     font-style: normal;
     font-weight: 400;
@@ -54,6 +55,10 @@ export const Title1 = styled.div`
     line-height: 50px;
     letter-spacing: 0.2px;
     color: ${({ theme }) => theme.colors.black};
+
+    ${breakpoint.lg} {
+        text-align: start;
+       }
 `;
 
 
