@@ -7,7 +7,7 @@ import { TestimonialTitle, TestimonialSubtitle, TestDescription } from './../../
 import { GreyWrapper } from './GreyStyles';
 import { WrapperCard } from './GreyStyles';
 import { GreyDescription } from './../../atoms/titleSubtitle/TitleSubtitleStyles'
-import { Span, WrapperText, CardGreyDark, CardGreyLight, Cards } from './GreyStyles';
+import { Span, WrapperText, CardGreyDark, Cards, Card } from './GreyStyles';
 
 
 const Grey = ({ title, subtitle, description, items }: greyDataType) => {
@@ -15,6 +15,7 @@ const Grey = ({ title, subtitle, description, items }: greyDataType) => {
         <ThemeProvider theme={theme}>
             <GlobalStyle />
             <GreyWrapper>
+
                 <WrapperCard>
                     <WrapperText>
                         <Span></Span>
@@ -23,28 +24,28 @@ const Grey = ({ title, subtitle, description, items }: greyDataType) => {
                         <TestimonialSubtitle>{subtitle}</TestimonialSubtitle>
                         <TestDescription>{description}</TestDescription>
                     </WrapperText>
-                    {items.map((item, index) => (
-                        <Cards key={index}>
-                            <CardGreyLight>
+                    <Cards>
+                        {items.map((item, index) => (
+                            <Card key={index}>
+
                                 <CardGreyDark>
-                                    <div>
+                                    <div className="img-dark">
                                         <img src={item.img} alt="img" />
                                     </div>
-                                    <div>
+                                    <div className="text-dark">
                                         <GreyDescription>{item.description}</GreyDescription>
                                     </div>
-
                                 </CardGreyDark>
-                            </CardGreyLight>
-                        </Cards>
-
-                    ))}
-
+                            </Card>
+                        ))}
+                    </Cards>
                 </WrapperCard>
             </GreyWrapper>
         </ThemeProvider>
     </>
 }
+
+
 
 export default Grey;
 

@@ -227,15 +227,13 @@ export const DescriptionPopular = styled(DescriptionCard)`
 `;
 
 
-
-
 export const GreyDescription = styled.div` 
-    margin-top: 12px;
-    font-family: ${({ theme }) => theme.font1};
+    text-align: start;
+    font-family: ${({ theme }) => theme.font2};
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 35px;
     letter-spacing: 0.2px;
-    color: ${({ theme }) => theme.colors.black2};
+    color: ${({ theme }) => theme.colors.white};
 `;
