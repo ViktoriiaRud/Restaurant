@@ -11,6 +11,10 @@ import Offers from './components/organisms/offers/Offers';
 import offersData from './components/organisms/offers/OffersData';
 import menuPopularData from './components/organisms/menuPopular/MenuPopularData';
 import MenuPopular from './components/organisms/menuPopular/MenuPopular';
+import blogData from './components/organisms/blog/BlogData';
+import Blog from './components/organisms/blog/Blog';
+
+
 
 function App() {
   return (
@@ -21,6 +25,7 @@ function App() {
       <Testimonial {...testimonialData} />
       <Offers {...offersData} />
       <MenuPopular {...menuPopularData} />
+      <Blog {...blogData} />
     </div>
   );
 }
