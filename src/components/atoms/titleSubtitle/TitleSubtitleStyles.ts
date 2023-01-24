@@ -237,3 +237,39 @@ export const GreyDescription = styled.div`
     letter-spacing: 0.2px;
     color: ${({ theme }) => theme.colors.white};
 `;
+
+
+export const BlogSubtitle = styled.div` 
+    text-align: start;
+    font-family: ${({ theme }) => theme.font1};   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+export const BlogData = styled(BlogSubtitle)``;
+
+
+export const BlogDescription = styled(DescriptionCard)``;
+
+
+export const BlogTitle = styled.div` 
+    text-align: start;
+    font-family: ${({ theme }) => theme.font2};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: ${({ theme }) => theme.colors.black};
+`;
+
+
+
+

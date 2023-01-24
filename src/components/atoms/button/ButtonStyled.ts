@@ -75,3 +75,14 @@ export const ButtonPopular = styled(Button)`
     color: ${({ theme }) => theme.colors.yellow};
 `;
 
+
+
+export const ButtonView = styled(Button)`
+    position: absolute;
+    margin: 120px 0px 0px -49px;
+    width: 227px;
+    height: 73px;
+    background: ${({ theme }) => theme.colors.yellow};
+    color: ${({ theme }) => theme.colors.black};
+    z-index: 0;
+`;

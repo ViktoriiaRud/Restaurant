@@ -20,7 +20,7 @@ export const WrapperCards = styled.div`
 
 
 export const WrapperCard = styled.div`
-position: relative;
+    position: relative;
     margin-top: 50px;
     max-width: 317px;
     min-height: 449px;
