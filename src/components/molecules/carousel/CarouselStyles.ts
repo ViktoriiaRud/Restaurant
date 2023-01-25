@@ -15,7 +15,7 @@ export const Text = styled.div`
 
 export const Card = styled.div`
     margin-top: 20px;
-    background-color: ${({ theme }) => theme.colors.grey8};
+    background-color: ${({ theme }) => theme.colors.grey10};
     width: 825px;
     margin: 102px 38px 100px 180px;
     display: flex;

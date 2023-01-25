@@ -265,7 +265,7 @@ export const WrapperImg2 = styled.div`
 	max-height: 250px;
 	position: absolute;
     z-index: 1;
-    margin: -573px 0px 0px 283px;
+    margin: -645px 0px 0px 302px;
 		img {
 			width: 100%;	
 		}

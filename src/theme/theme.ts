@@ -7,7 +7,8 @@ export const theme = {
     wrapperXl: '1440px,',
     colors: {
         transparent: 'transparent',
-        grey: '#40464F',
+        grey3: '#40464F',
+        grey: '#292E36',
         white: '#FFFFFF',
         yellow: '#E1B168',
         grey2: 'rgba(255, 255, 255, 0.1)',

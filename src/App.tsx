@@ -15,6 +15,8 @@ import blogData from './components/organisms/blog/BlogData';
 import Blog from './components/organisms/blog/Blog';
 import Reservation from './components/organisms/reservation/Reservation';
 import { reservationData } from './components/organisms/reservation/ReservationData';
+import Footer from './components/organisms/footer/Footer';
+import { footerData } from './components/organisms/footer/FooterData';
 
 
 
@@ -29,6 +31,7 @@ function App() {
       <MenuPopular {...menuPopularData} />
       <Blog {...blogData} />
       <Reservation {...reservationData} />
+      <Footer {...footerData} />
     </div>
   );
 }

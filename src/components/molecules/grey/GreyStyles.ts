@@ -53,7 +53,6 @@ export const Card = styled.div`
     grid-template-columns: 254px;
     grid-template-rows: 235px;
     justify-content: space-between;
-
 `;
 
 
@@ -61,7 +60,7 @@ export const CardGreyDark = styled.div`
     max-width: 254px;
     min-height: 235px; 
     padding: 24px 7px 9px 60px; 
-    border: 25px solid ${({ theme }) => theme.colors.grey8};
+    border: 25px solid ${({ theme }) => theme.colors.grey10};
     background-color: ${({ theme }) => theme.colors.grey};
     z-index: 0;
     .img-dark {

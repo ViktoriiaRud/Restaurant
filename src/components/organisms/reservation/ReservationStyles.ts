@@ -4,7 +4,6 @@ export const BackgroundHall = styled.section`
     position: relative;
     margin-top: 150px;
     max-width: 1440px;
-    min-height: 977px;
     img {
         100%;
     }  
