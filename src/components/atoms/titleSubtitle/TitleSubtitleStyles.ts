@@ -271,5 +271,18 @@ export const BlogTitle = styled.div`
 `;
 
 
+export const HallSubtitle = styled(BlogSubtitle)` 
+    padding: 120px 0px 0px 0px;
+    text-align: center;  
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.white};
+`;
 
 
+export const HallTitle = styled(TitleCard)` 
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 56px;
+    color: ${({ theme }) => theme.colors.white};
+`;
