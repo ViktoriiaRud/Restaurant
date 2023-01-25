@@ -13,6 +13,8 @@ import menuPopularData from './components/organisms/menuPopular/MenuPopularData'
 import MenuPopular from './components/organisms/menuPopular/MenuPopular';
 import blogData from './components/organisms/blog/BlogData';
 import Blog from './components/organisms/blog/Blog';
+import Reservation from './components/organisms/reservation/Reservation';
+import { reservationData } from './components/organisms/reservation/ReservationData';
 
 
 
@@ -26,6 +28,7 @@ function App() {
       <Offers {...offersData} />
       <MenuPopular {...menuPopularData} />
       <Blog {...blogData} />
+      <Reservation {...reservationData} />
     </div>
   );
 }
