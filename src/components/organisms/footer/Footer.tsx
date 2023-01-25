@@ -4,6 +4,7 @@ import { theme } from '../../../theme/theme';
 import { ThemeProvider } from 'styled-components';
 import { footerDataType } from './FooterData';
 import { WrapperFooter, WrapperColor } from './FooterStyles';
+import { Contact, FormLogo, Social, Logo, Form } from './FooterStyles';
 
 const Footer = ({ img }: footerDataType) => {
     return <>
@@ -11,12 +12,26 @@ const Footer = ({ img }: footerDataType) => {
             <GlobalStyle />
 
             <WrapperColor>
-
                 <WrapperFooter>
-                    <img src={img} alt="logo" />
-                </WrapperFooter>
-            </WrapperColor>
+                    <Contact>
 
+                    </Contact>
+                    <FormLogo>
+                        <Logo>
+                            <img src={img} alt="logo" />
+                        </Logo>
+                        <Form>
+
+                        </Form>
+
+                    </FormLogo>
+
+                    <Social>
+
+                    </Social>
+                </WrapperFooter>
+
+            </WrapperColor>
         </ThemeProvider>
     </>
 }

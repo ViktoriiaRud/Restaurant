@@ -46,7 +46,7 @@ export const Grid = styled.div`
     grid-template-rows: 100px auto;
     gap: 10px;
     .title-data {
-    
+        
         grid-column: 1 / 4;
         grid-row: 1 / 1;
     }
