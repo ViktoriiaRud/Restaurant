@@ -286,3 +286,61 @@ export const HallTitle = styled(TitleCard)`
     font-size: 56px;
     color: ${({ theme }) => theme.colors.white};
 `;
+
+
+export const FooterDescription = styled(GreyDescription)` 
+    margin-top: 20px;
+    text-align: center;
+    line-height: 14px;
+`;
+
+
+export const TastEat = styled(GreyDescription)` 
+    margin-top: 20px;
+    text-align: start;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.white};
+`;
+
+
+export const ContactTitle = styled.div` 
+    margin-top: 180px;
+    text-align: start;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.white};
+`;
+
+
+export const ContactCity = styled.div` 
+    margin-top: 10px;
+    text-align: start;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.white};
+`;
+
+
+export const Phone = styled(ContactCity)` 
+    margin-top: 10px;
+    color: ${({ theme }) => theme.colors.yellow};
+`;
+
+export const Email = styled(ContactCity)` 
+    margin-top: 10px;
+    color: ${({ theme }) => theme.colors.yellow};
+`;

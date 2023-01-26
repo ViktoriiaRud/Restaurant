@@ -8,7 +8,6 @@ export const WrapperColor = styled.footer`
 
 export const WrapperFooter = styled.div`
     padding: 100px 20px 10px 20px;
-    margin-top: 70px;
     max-width: 1360px;
     min-height: 665px;
     display: grid;
@@ -26,17 +25,14 @@ export const Contact = styled.div`
     min-height: 320px;
     grid-column: 1 / 1;
     grid-row: 1 / 2;
-    background-color: yellow;
 `;
 
 
 export const FormLogo = styled.div`
-    margin-top: 70px;
     max-width: 664px;
     min-height: 474px;
     grid-column: 2 / 2;
     grid-row: 1 / 2;
-    background-color: grey;
 `;
 
 export const Social = styled.div`
@@ -57,7 +53,7 @@ export const Logo = styled.div`
 `;
 
 export const Form = styled.div`
-margin-top: 80px;
+    margin-top: 20px;
     max-width: 664px;
     min-height: 176px;
     background-color: blue;
