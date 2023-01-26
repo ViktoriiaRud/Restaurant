@@ -14,8 +14,6 @@ export const WrapperFooter = styled.div`
     grid-template-columns: 335px 548px 335px;
     grid-template-rows: 176px auto;
     gap: 10px;
-   
-
 `;
 
 
@@ -58,6 +56,5 @@ export const Form = styled.div`
     margin-top: 20px;
     max-width: 664px;
     min-height: 176px;
-    background-color: grey;
 `;
 

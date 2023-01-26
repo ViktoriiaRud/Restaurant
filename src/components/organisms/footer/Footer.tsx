@@ -6,12 +6,13 @@ import { footerDataType } from './FooterData';
 import { WrapperFooter, WrapperColor } from './FooterStyles';
 import { Contact, FormLogo, Social, Logo, Form } from './FooterStyles';
 import { FooterDescription, TastEat, ContactTitle, ContactCity, Phone, Email, SocialText, SocialTextMon, SocialTextSut, SocialTextSun } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
+import CustomForm from './../../molecules/form/Form';
+
 
 const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitle3, phone, email, imgSocial, subtitle4, dataMonday, dataSaturday, dataSunday }: footerDataType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
-
             <WrapperColor>
                 <WrapperFooter>
                     <Contact>
@@ -21,6 +22,7 @@ const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitl
                         <Phone>{phone}</Phone>
                         <Email>{email}</Email>
                     </Contact>
+
                     <FormLogo>
                         <Logo>
                             <img src={img} alt="logo" />
@@ -28,11 +30,10 @@ const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitl
                         <FooterDescription>{description1}</FooterDescription>
                         <FooterDescription>{description2}</FooterDescription>
                         <Form>
-
+                            <CustomForm />
                         </Form>
 
                     </FormLogo>
-
                     <Social>
                         {imgSocial ?
                             imgSocial.map((item) => (
@@ -44,10 +45,8 @@ const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitl
                         <SocialTextMon>{dataMonday}</SocialTextMon>
                         <SocialTextSut>{dataSaturday}</SocialTextSut>
                         <SocialTextSun>{dataSunday}</SocialTextSun>
-
                     </Social>
                 </WrapperFooter>
-
             </WrapperColor>
         </ThemeProvider>
     </>

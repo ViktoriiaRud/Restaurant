@@ -3,13 +3,13 @@ import GlobalStyle from '../../../theme/globalStyles';
 import { theme } from '../../../theme/theme';
 import { ThemeProvider } from 'styled-components';
 import { blogDataType } from './BlogData';
-import { WrapperBlog } from './BlogStyled';
-import { SpanUp, Span } from './BlogStyled';
+import { WrapperBlog } from './BlogStyles';
+import { SpanUp, Span } from './BlogStyles';
 import { OffersSubtitle, OffersTitle, OffersDescription, OffersDescription2 } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
 import { Button } from 'react-bootstrap';
-import { WrapperCards, WrapperText, Card, WrapperImg } from './BlogStyled';
+import { WrapperCards, WrapperText, Card, WrapperImg } from './BlogStyles';
 import { ButtonView } from './../../atoms/button/ButtonStyled';
-import { BlogDataSpan, BlogDataSpanUp, SpanBlog, SpanBlogUp, Grid } from './BlogStyled';
+import { BlogDataSpan, BlogDataSpanUp, SpanBlog, SpanBlogUp, Grid } from './BlogStyles';
 import { BlogDescription, BlogTitle, BlogData, BlogSubtitle, } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
 const Blog = ({ subtitle, title, description1, description2, cards }: blogDataType) => {
 

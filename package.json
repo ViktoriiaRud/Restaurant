@@ -11,6 +11,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "bootstrap": "^5.2.3",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
@@ -18,7 +19,8 @@
     "styled-components": "^5.3.6",
     "the-new-css-reset": "^1.8.2",
     "typescript": "^4.9.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
