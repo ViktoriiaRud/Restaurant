@@ -41,7 +41,9 @@ export const Social = styled.div`
     min-height: 320px;
     grid-column: 3/ 3;
     grid-row: 1 / 2;
-    background-color: yellow;
+    .link-gap {
+        margin: 0 18px 9px 32px;
+    }
 `;
 
 
@@ -56,6 +58,6 @@ export const Form = styled.div`
     margin-top: 20px;
     max-width: 664px;
     min-height: 176px;
-    background-color: blue;
+    background-color: grey;
 `;
 

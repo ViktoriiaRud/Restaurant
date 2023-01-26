@@ -5,9 +5,9 @@ import { ThemeProvider } from 'styled-components';
 import { footerDataType } from './FooterData';
 import { WrapperFooter, WrapperColor } from './FooterStyles';
 import { Contact, FormLogo, Social, Logo, Form } from './FooterStyles';
-import { FooterDescription, TastEat, ContactTitle, ContactCity, Phone, Email } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
+import { FooterDescription, TastEat, ContactTitle, ContactCity, Phone, Email, SocialText, SocialTextMon, SocialTextSut, SocialTextSun } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
 
-const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitle3, phone, email, }: footerDataType) => {
+const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitle3, phone, email, imgSocial, subtitle4, dataMonday, dataSaturday, dataSunday }: footerDataType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
@@ -34,6 +34,16 @@ const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitl
                     </FormLogo>
 
                     <Social>
+                        {imgSocial ?
+                            imgSocial.map((item) => (
+                                <a className="link-gap" href="#"><img src={item} alt="social" /></a>
+                            ))
+                            : null}
+
+                        <SocialText>{subtitle4}</SocialText>
+                        <SocialTextMon>{dataMonday}</SocialTextMon>
+                        <SocialTextSut>{dataSaturday}</SocialTextSut>
+                        <SocialTextSun>{dataSunday}</SocialTextSun>
 
                     </Social>
                 </WrapperFooter>

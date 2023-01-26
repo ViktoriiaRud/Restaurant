@@ -33,7 +33,7 @@ const HeaderRestaurant = ({ img, img2, img3, imgSocial, links, title, subtitle }
                     <WrapperSocial>
                         {imgSocial ?
                             imgSocial.map((item) => (
-                                <img src={item} alt="social" />
+                                <a href="#"><img src={item} alt="social" /></a>
                             ))
                             : null}
 

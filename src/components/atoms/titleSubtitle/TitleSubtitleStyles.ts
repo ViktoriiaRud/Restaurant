@@ -17,7 +17,6 @@ export const TitleStory = styled.div`
        }
 `;
 
-
 export const DataTitle = styled(TitleStory)``;
 
 
@@ -74,7 +73,6 @@ export const Senna = styled.div`
     line-height: 42px;
     color: ${({ theme }) => theme.colors.black};
 `;
-
 
 export const DishSubtitle = styled(Senna)``;
 
@@ -211,7 +209,6 @@ export const SubtitlePopular = styled.div`
     color: ${({ theme }) => theme.colors.black};
 `;
 
-
 export const SennaPopular = styled(SubtitlePopular)``;
 
 
@@ -253,7 +250,6 @@ export const BlogSubtitle = styled.div`
 
 
 export const BlogData = styled(BlogSubtitle)``;
-
 
 export const BlogDescription = styled(DescriptionCard)``;
 
@@ -344,3 +340,41 @@ export const Email = styled(ContactCity)`
     margin-top: 10px;
     color: ${({ theme }) => theme.colors.yellow};
 `;
+
+
+export const SocialText = styled.div` 
+    margin-top: 10px;
+    margin: 156px 0px 29px 0px;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.white};
+`;
+
+
+export const SocialTextMon = styled.div` 
+    margin-top: 10px;
+    font-family: ${({ theme }) => theme.font1};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: ${({ theme }) => theme.colors.yellow};
+`;
+
+export const SocialTextSut = styled(SocialTextMon)``;
+
+export const SocialTextSun = styled(SocialTextMon)``;
+
+
+
+
+
+
