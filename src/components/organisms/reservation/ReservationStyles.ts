@@ -22,8 +22,7 @@ export const ImgDark = styled.div`
 
 
 export const WrapperForm = styled.div`
-    max-width: 720px;
-    min-height: 397px;
+ 
 `;
 
 

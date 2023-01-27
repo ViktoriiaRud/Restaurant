@@ -9,8 +9,8 @@ const FormReservation = () => {
             initialValues={{
                 name: '',
                 email: '',
-                persons: 0,
-                timing: 0,
+                persons: '',
+                timing: '',
                 data: '',
             }}
             validationSchema={Yup.object({
@@ -19,9 +19,9 @@ const FormReservation = () => {
                 email: Yup.string()
                     .email('Enter your Email')
                     .required('Required'),
-                persons: Yup.number()
+                persons: Yup.string()
                     .required('Required'),
-                timing: Yup.number()
+                timing: Yup.string()
                     .required('Required'),
                 data: Yup.string()
                     .required('Required'),
@@ -33,7 +33,8 @@ const FormReservation = () => {
 
             <FormTasteat className="form">
                 <label htmlFor="name">Name</label>
-                <Field
+                <Field className="name"
+
                     id="name"
                     name="name"
                     type="text"
@@ -41,7 +42,7 @@ const FormReservation = () => {
                 <ErrorMessage className="error" name="name" component="div" />
 
                 <label htmlFor="email">Email</label>
-                <Field
+                <Field className="email"
                     id="email"
                     name="email"
                     type="email"
@@ -71,7 +72,7 @@ const FormReservation = () => {
                     name="data"
                     type="data"
                 />
-                <option value="data"></option>
+
                 <ErrorMessage className="error" name="data" component="div" />
 
 
