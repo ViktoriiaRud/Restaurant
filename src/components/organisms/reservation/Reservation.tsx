@@ -4,8 +4,10 @@ import { theme } from '../../../theme/theme';
 import { ThemeProvider } from 'styled-components';
 import { reservationDataType } from './ReservationData';
 import { BackgroundHall } from './ReservationStyles';
-import { ImgDark, } from './ReservationStyles';
+import { ImgDark, WrapperForm } from './ReservationStyles';
 import { HallSubtitle, HallTitle } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
+import FormReservation from './../../molecules/formReservation/FormReservation';
+
 
 const Reservation = ({ img, subtitle, title }: reservationDataType) => {
 
@@ -17,6 +19,10 @@ const Reservation = ({ img, subtitle, title }: reservationDataType) => {
                 <ImgDark>
                     <HallSubtitle>{subtitle}</HallSubtitle>
                     <HallTitle>{title}</HallTitle>
+                    <WrapperForm>
+                        <FormReservation />
+                    </WrapperForm>
+
                 </ImgDark>
 
 

@@ -1,8 +1,8 @@
 import { Formik, Field, ErrorMessage } from 'formik';
-import { MyForm } from './Form.styles';
+import { MyForm } from './FormFooterStyles';
 import *as Yup from 'yup';
 
-const CustomForm = () => {
+const FormFooter = () => {
     return (
         <Formik
             initialValues={{
@@ -30,5 +30,5 @@ const CustomForm = () => {
     )
 }
 
-export default CustomForm;
+export default FormFooter;
 
