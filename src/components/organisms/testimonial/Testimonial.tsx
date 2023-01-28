@@ -6,8 +6,8 @@ import { testimonialType } from './TestimonialData';
 import { WrapperColor } from './TestimonialStyles';
 import { WrapperTestimonial, TestimonialCard, TestimonialImg, Span } from './TestimonialStyles';
 import { TestDescription, TestimonialSubtitle, TestimonialTitle } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
-import MyCarousel from '../../molecules/carousel/Carousel';
-import carouselData from '../../molecules/carousel/CarouselData';
+import MyCarousel from '../carousel/Carousel';
+import carouselData from '../carousel/CarouselData';
 
 
 const Testimonial = ({ img, title, subtitle, description }: testimonialType) => {
@@ -28,7 +28,6 @@ const Testimonial = ({ img, title, subtitle, description }: testimonialType) => 
                         <img src={img} alt="img" />
                     </TestimonialImg>
                 </WrapperTestimonial>
-
             </WrapperColor>
         </ThemeProvider>
     </>

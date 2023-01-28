@@ -6,7 +6,7 @@ import { reservationDataType } from './ReservationData';
 import { BackgroundHall } from './ReservationStyles';
 import { ImgDark, WrapperForm } from './ReservationStyles';
 import { HallSubtitle, HallTitle } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
-import FormReservation from './../../molecules/formReservation/FormReservation';
+import FormReservation from '../formReservation/FormReservation';
 
 
 const Reservation = ({ img, subtitle, title }: reservationDataType) => {

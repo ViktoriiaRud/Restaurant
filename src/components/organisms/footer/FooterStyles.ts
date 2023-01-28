@@ -11,14 +11,14 @@ export const WrapperFooter = styled.div`
     max-width: 1360px;
     min-height: 665px;
     display: grid;
-    grid-template-columns: 335px 548px 335px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 176px auto;
     gap: 10px;
 `;
 
 
 export const Contact = styled.div`
-    margin-top: 160px;
+    margin-top: 100px;
     max-width: 332px;
     min-height: 320px;
     grid-column: 1 / 1;
@@ -34,7 +34,7 @@ export const FormLogo = styled.div`
 `;
 
 export const Social = styled.div`
-    margin-top: 160px;
+    margin-top: 100px;
     max-width: 332px;
     min-height: 320px;
     grid-column: 3/ 3;
@@ -54,6 +54,7 @@ export const Logo = styled.div`
 
 export const Form = styled.div`
     margin-top: 20px;
+    margin: 0 auto;
     max-width: 664px;
     min-height: 176px;
 `;

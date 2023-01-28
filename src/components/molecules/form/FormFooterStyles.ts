@@ -4,57 +4,38 @@ import { breakpoint } from '../../../theme/breakpoints';
 
 
 export const MyForm = styled.form`
-    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 5px 5px 5px 5px;
-    padding: 35px;
-    width: 550px;
-    min-height: 76px;
-    ${breakpoint.lg} {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 30px;
-    }
-    label {
-        position: absolute;
-        margin: 30px 5px 0px 45px;
-        margin-bottom: 20px;
-        width: 80px;
-        height: 32px;
-        left: 16px;
-        top: 37px;
-        font-family: ${({ theme }) => theme.font1};
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
-        color: rgba(51, 51, 51, 0.496405);
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 176px;
+
     input {
-        width: 100%;
-        height: 50px;
-        margin-top: 23px;
+        height: 60px;
+        margin-top: 35px;
         padding: 5px 15px;
+        font-family: ${({ theme }) => theme.font1};
         background-color: ${({ theme }) => theme.colors.grey};
+        color: ${({ theme }) => theme.colors.white}; 
         border: 1px solid #858585;
-        font-size: 26px;
+        font-size: 22px;
         &:focus {
-            background-color: #DEB887;  
+            background-color: ${({ theme }) => theme.colors.white}; 
+            color: ${({ theme }) => theme.colors.grey}; 
+            border: 1px solid ${({ theme }) => theme.colors.moccasin};
         }
+
     }
     button {
-        width: 179px;
-        height: 48px;
-        padding: 15px;
-        margin-top: 25px;
+        margin: 0 auto;
+        width: 196px;
+        height: 59px;
+        margin-top: 35px;
         border: 0;
         background-color: white;
         font-family: ${({ theme }) => theme.font1};
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 22px;
         line-height: 25px;
         text-align: center;
         letter-spacing: 0.2px;

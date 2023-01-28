@@ -26,9 +26,11 @@ const Footer = ({ img, description1, description2, subtitle1, subtitle2, subtitl
                     <FormLogo>
                         <Logo>
                             <img src={img} alt="logo" />
+
                         </Logo>
                         <FooterDescription>{description1}</FooterDescription>
                         <FooterDescription>{description2}</FooterDescription>
+
                         <Form>
                             <FormFooter />
                         </Form>
