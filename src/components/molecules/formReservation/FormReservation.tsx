@@ -17,7 +17,7 @@ const FormReservation = () => {
                 name: Yup.string()
                     .required('Required'),
                 email: Yup.string()
-                    .email('Enter your Email')
+                    .email('Enter Email')
                     .required('Required'),
                 persons: Yup.string()
                     .required('Required'),
@@ -32,48 +32,57 @@ const FormReservation = () => {
         >
 
             <FormTasteat className="form">
-                <label htmlFor="name">Name</label>
-                <Field className="name"
+                <div>
+                    <Field className="name"
+                        placeholder='Name'
+                        id="name"
+                        name="name"
+                        type="text"
+                    />
+                    <ErrorMessage className="error" name="name" component="div" />
+                </div>
 
-                    id="name"
-                    name="name"
-                    type="text"
-                />
-                <ErrorMessage className="error" name="name" component="div" />
+                <div>
+                    <Field className="email"
+                        id="email"
+                        placeholder='Email'
+                        name="email"
+                        type="email"
+                    />
+                    <ErrorMessage className="error" name="email" component="div" />
+                </div>
+                <div>
+                    <Field
+                        placeholder='Persons'
+                        id="persons"
+                        name="persons"
 
-                <label htmlFor="email">Email</label>
-                <Field className="email"
-                    id="email"
-                    name="email"
-                    type="email"
-                />
-                <ErrorMessage className="error" name="email" component="div" />
+                    />
+                    <ErrorMessage className="error" name="persons" component="div" />
+                </div>
 
-                <label htmlFor="persons">Persons</label>
-                <Field
-                    id="persons"
-                    name="persons"
-                    type="persons"
-                />
-                <ErrorMessage className="error" name="persons" component="div" />
+                <div>
+                    <Field
+                        placeholder='Timing'
+                        id="timing"
+                        name="timing"
+                        type="timing"
+                    />
+                    <ErrorMessage className="error" name="timing" component="div" />
+                </div>
 
-                <label htmlFor="timing">Timing</label>
-                <Field
-                    id="timing"
-                    name="timing"
-                    type="timing"
-                />
-                <ErrorMessage className="error" name="timing" component="div" />
+                <div>
 
+                    <Field
+                        placeholder='Data'
+                        id="data"
+                        name="data"
+                        type="data"
+                    />
 
-                <label htmlFor="data">Data</label>
-                <Field
-                    id="data"
-                    name="data"
-                    type="data"
-                />
+                    <ErrorMessage className="error" name="data" component="div" />
+                </div>
 
-                <ErrorMessage className="error" name="data" component="div" />
 
 
                 <button type="submit">Book A Table</button>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { breakpoint } from "../../../theme";
 
 export const WrapperColor = styled.footer`
     background-color: ${({ theme }) => theme.colors.grey};

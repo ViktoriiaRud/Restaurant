@@ -1,6 +1,6 @@
 import React from "react";
-import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcome, WrapperTitle, WrapperImg, WrapperImg2 } from "./HeaderRestaurantStyles";
-import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, LinkWhite, Link, Span1, Span2, Span3 } from './HeaderRestaurantStyles';
+import { WrapperLogo, Logo, WrapperBanner, Span, WrapperWelcome, WrapperTitle, WrapperImg } from "./HeaderRestaurantStyles";
+import { WrapperLinkSocial, WrapperLink, WrapperSocial, LinkYellow, Link } from './HeaderRestaurantStyles';
 import { Button, ButtonOrange, ButtonTitle } from '../../atoms/button/ButtonStyled';
 import GlobalStyle from "../../../theme/globalStyles";
 import { ThemeProvider } from "styled-components";
@@ -8,7 +8,7 @@ import { theme } from './../../../theme/theme';
 import { headerRestaurantType } from './HeaderRestaurantData'
 
 
-const HeaderRestaurant = ({ img, img2, img3, imgSocial, links, title, subtitle }: headerRestaurantType) => {
+const HeaderRestaurant = ({ img, img3, imgSocial, links, title, subtitle }: headerRestaurantType) => {
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
@@ -47,13 +47,7 @@ const HeaderRestaurant = ({ img, img2, img3, imgSocial, links, title, subtitle }
                         <ButtonTitle>View Menu</ButtonTitle>
                     </WrapperTitle>
                     <WrapperImg>
-                        <Span1></Span1>
                         <img src={img3} alt="Frame" />
-                        <Span2></Span2>
-                        <Span3></Span3>
-                        <WrapperImg2>
-                            <img src={img2} alt="Frame" />
-                        </WrapperImg2>
                     </WrapperImg>
                 </WrapperWelcome>
             </WrapperBanner>

@@ -5,7 +5,7 @@ import { theme } from '../../../theme/theme';
 
 export const WrapperBanner = styled.section`
 	background-color: ${({ theme }) => theme.colors.grey};
-	min-height: 981px;
+	min-height: 810px;
 `;
 
 
@@ -161,7 +161,6 @@ export const Link = styled.ul`
 
 
 export const WrapperWelcome = styled.div`
-    position: relative;
 	margin: 10px 45px 10px 10px;
 	display: flex;
 	flex-direction: column;
@@ -236,8 +235,7 @@ export const WrapperTitle = styled.div`
 
 
 export const WrapperImg = styled.div`
-	margin-top: 25px;
-	position: relative;
+	margin-top: 55px;
 	margin: 0; 
 	max-width: 320px;
 	max-height: 600px;
@@ -255,61 +253,6 @@ export const WrapperImg = styled.div`
 			max-height: 612px;	
 		}
 	}
-	}
-`;
-
-
-export const WrapperImg2 = styled.div`
-	margin: 0; 
-	max-width: 250px;
-	max-height: 250px;
-	position: absolute;
-    z-index: 1;
-    margin: -645px 0px 0px 302px;
-		img {
-			width: 100%;	
-		}
-	}
-`;
-
-export const Span1 = styled.span`
-	display: none;
-	
-	${breakpoint.lg} {
-	margin: 20px -5px 38px -6px;
-	max-width: 670px;
-	display: block;
-	height: 30px;
-	background-color: ${({ theme }) => theme.colors.grey2};
-	mix-blend-mode: normal;
-	}
-`;
-
-
-export const Span2 = styled.span`
-	display: none;
-
-	${breakpoint.lg} {
-		margin: -654px -47px 0px 552px;
-		max-width: 30px;
-		display: block;
-		height: 650px;
-		background-color: ${({ theme }) => theme.colors.grey2};
-		mix-blend-mode: normal;
-	}
-`;
-
-
-export const Span3 = styled.span`
-	display: none;
-
-	${breakpoint.lg} {
-		margin: -650px -21px -4px -36px;
-		max-width: 30px;
-		display: block;
-		height: 650px;
-		background-color: ${({ theme }) => theme.colors.grey2};
-		mix-blend-mode: normal;
 	}
 `;
 

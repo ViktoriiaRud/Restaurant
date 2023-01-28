@@ -25,7 +25,7 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.white};
     cursor: pointer;
     &:hover {
-        transform: translateY(-5px);
+      
         background-color: #CD853F;
         color: #FFFFFF;
         }
