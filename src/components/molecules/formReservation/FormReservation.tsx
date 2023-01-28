@@ -14,17 +14,11 @@ const FormReservation = () => {
                 data: '',
             }}
             validationSchema={Yup.object({
-                name: Yup.string()
-                    .required('Required'),
-                email: Yup.string()
-                    .email('Enter Email')
-                    .required('Required'),
-                persons: Yup.string()
-                    .required('Required'),
-                timing: Yup.string()
-                    .required('Required'),
+                name: Yup.string(),
+                email: Yup.string(),
+                persons: Yup.string(),
+                timing: Yup.string(),
                 data: Yup.string()
-                    .required('Required'),
             })}
 
             onSubmit={values => console.log(JSON.stringify(values, null, 2))}
@@ -32,7 +26,7 @@ const FormReservation = () => {
         >
 
             <FormTasteat className="form">
-                <div>
+                <div className="name-form">
                     <Field className="name"
                         placeholder='Name'
                         id="name"
@@ -42,7 +36,7 @@ const FormReservation = () => {
                     <ErrorMessage className="error" name="name" component="div" />
                 </div>
 
-                <div>
+                <div className="email-form">
                     <Field className="email"
                         id="email"
                         placeholder='Email'
@@ -51,7 +45,8 @@ const FormReservation = () => {
                     />
                     <ErrorMessage className="error" name="email" component="div" />
                 </div>
-                <div>
+
+                <div className="persons-form">
                     <Field
                         placeholder='Persons'
                         id="persons"
@@ -61,7 +56,7 @@ const FormReservation = () => {
                     <ErrorMessage className="error" name="persons" component="div" />
                 </div>
 
-                <div>
+                <div className="timing-form">
                     <Field
                         placeholder='Timing'
                         id="timing"
@@ -71,7 +66,7 @@ const FormReservation = () => {
                     <ErrorMessage className="error" name="timing" component="div" />
                 </div>
 
-                <div>
+                <div className="data-form">
 
                     <Field
                         placeholder='Data'
@@ -82,8 +77,6 @@ const FormReservation = () => {
 
                     <ErrorMessage className="error" name="data" component="div" />
                 </div>
-
-
 
                 <button type="submit">Book A Table</button>
             </FormTasteat>
