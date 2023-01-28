@@ -69,9 +69,10 @@ export const Senna = styled.div`
     font-family: ${({ theme }) => theme.font2};
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 42px;
     color: ${({ theme }) => theme.colors.black};
+
 `;
 
 export const DishSubtitle = styled(Senna)``;
@@ -203,7 +204,7 @@ export const SubtitlePopular = styled.div`
     font-family: ${({ theme }) => theme.font2};
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 42px;
     letter-spacing: 0.2px;
     color: ${({ theme }) => theme.colors.black};

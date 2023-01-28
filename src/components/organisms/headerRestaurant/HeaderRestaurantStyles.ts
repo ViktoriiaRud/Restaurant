@@ -27,6 +27,7 @@ export const WrapperLogo = styled.div`
 	}
 
 	${breakpoint.lg} {
+		margin: 0px 0px 22px 0px;
 		padding: 20px 30px;
 		max-width: 1360px;
 		gap: 122px;
@@ -105,6 +106,8 @@ export const WrapperSocial = styled.div`
 	justify-content: end;
 	gap: ${({ theme }) => theme.gap.sm};
 
+
+
 	${breakpoint.sm} {
 		margin-top: 0px;
 		margin: 20px 90px 10px 10px;
@@ -116,6 +119,7 @@ export const WrapperSocial = styled.div`
 
 	${breakpoint.lg} {
 		margin: 20px 55px 10px 10px;
+
 	}
 `;
 
@@ -127,7 +131,13 @@ export const LinkYellow = styled.a`
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 0.2px;
-	color: ${({ theme }) => theme.colors.yellow};
+	text-decoration: none;
+	color: ${({ theme }) => theme.colors.white};
+	&:hover {
+        color: ${({ theme }) => theme.colors.yellow};
+        }
+ 
+
 `;
 
 
@@ -146,6 +156,7 @@ export const Link = styled.ul`
 	list-style-type: none;
 	gap: ${({ theme }) => theme.gap.md}  
 	}
+	
 
 	${breakpoint.md} {
 		padding: 5px;

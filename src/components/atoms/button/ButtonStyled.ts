@@ -29,7 +29,7 @@ export const Button = styled.button`
         background-color: #CD853F;
         color: #FFFFFF;
         }
-
+    
         ${breakpoint.md} {
             width: 295px;
         }

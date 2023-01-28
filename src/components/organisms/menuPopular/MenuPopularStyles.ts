@@ -31,7 +31,7 @@ export const WrapperCard = styled.div`
     background-color: #FFF8DC;
     .senna {
         position: absolute;
-        margin: -40px 0px 0px 245px;
+        margin: -40px 0px 0px 225px;
     }
 `;
 
@@ -43,7 +43,7 @@ export const CardImg = styled.div`
 
 
 export const CardText = styled.div`
-    padding: 2px;
-    max-width: 318px;
-    height: 153px;
+    padding: 0px 5px 10px 20px;
+    max-width: 290px;
+    min-height: 153px;
 `;

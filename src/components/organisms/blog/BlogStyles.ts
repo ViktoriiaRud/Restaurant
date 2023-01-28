@@ -32,7 +32,6 @@ export const WrapperCards = styled.div`
     margin-top: 30px;
     padding: 20px;
     max-width: 320px;
-    // min-height: 770px;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +40,7 @@ export const WrapperCards = styled.div`
 
     ${breakpoint.md} {
         margin-top: 30px;
-        padding: 10px;
+        // padding: 10px;
         max-width: 520px;
         min-height: 770px;
         flex-direction: row;
@@ -53,7 +52,6 @@ export const WrapperCards = styled.div`
 
     ${breakpoint.lg} {
         margin-top: 30px;
-        padding: 20px;
         max-width: 1380px;
         min-height: 770px;
         flex-direction: row;
@@ -72,10 +70,11 @@ export const WrapperText = styled.div`
 
 
 export const Grid = styled.div`
+    padding: 30px;
     max-width: 600px;
-    // min-height: 335px;
+    min-height: 335px;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px auto;
     gap: 10px;
     .title-data {
@@ -95,7 +94,7 @@ export const Grid = styled.div`
 export const Card = styled.div`
     position: relative;
     max-width: 600px;
-    // min-height: 720px;
+    min-height: 720px;
     border: 1px solid #DCDCDC;
     background-color: #FFF8DC;
 `;
@@ -104,18 +103,11 @@ export const Card = styled.div`
 export const WrapperImg = styled.div`
     max-width: 300px;
     min-height: 284px;
-    img {
-        width: 300px;
-        height: 284px;
-    }
-
+   
     ${breakpoint.lg} {
         max-width: 600px;
         min-height: 384px;
-        img {
-            width: 600px;
-            height: 384px;
-        }
+       
     }
 `;
 

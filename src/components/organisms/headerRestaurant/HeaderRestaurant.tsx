@@ -30,6 +30,7 @@ const HeaderRestaurant = ({ img, img3, imgSocial, links, title, subtitle }: head
 
                         </Link>
                     </WrapperLink>
+
                     <WrapperSocial>
                         {imgSocial ?
                             imgSocial.map((item) => (
@@ -39,7 +40,7 @@ const HeaderRestaurant = ({ img, img3, imgSocial, links, title, subtitle }: head
 
                     </WrapperSocial>
                 </WrapperLinkSocial>
-
+                <Span></Span>
                 <WrapperWelcome>
                     <WrapperTitle>
                         <h1>{title}</h1>
