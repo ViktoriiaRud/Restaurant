@@ -37,7 +37,6 @@ const HeaderRestaurant = ({ img, img3, imgSocial, links, title, subtitle }: head
                                 <a href="#"><img src={item} alt="social" /></a>
                             ))
                             : null}
-
                     </WrapperSocial>
                 </WrapperLinkSocial>
                 <Span></Span>

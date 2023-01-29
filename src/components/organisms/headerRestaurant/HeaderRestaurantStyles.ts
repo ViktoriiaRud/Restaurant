@@ -5,7 +5,10 @@ import { theme } from '../../../theme/theme';
 
 export const WrapperBanner = styled.section`
 	background-color: ${({ theme }) => theme.colors.grey};
-	min-height: 810px;
+	
+	${breakpoint.lg} {
+		min-height: 790px;
+	}
 `;
 
 
@@ -17,9 +20,8 @@ export const WrapperLogo = styled.div`
 	gap: 10px;
 
 	${breakpoint.md} {
-		padding: 20px 30px;
+		padding: 20px;
 		max-width: 1025px;
-		max-height: 188px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -32,6 +34,10 @@ export const WrapperLogo = styled.div`
 		max-width: 1360px;
 		gap: 122px;
 	}
+	${breakpoint.xl} {
+		margin: 0px auto;
+		max-width: 1460px;
+	}
 `;
 
 
@@ -39,8 +45,12 @@ export const Logo = styled.div`
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-top: 30px;
-	max-width: 320px;
+	max-width: 259px;
 	max-height: 188px;
+
+	${breakpoint.md} {
+		max-width: 295px;
+	}
 
 	${breakpoint.lg} {
 		margin-top: 0px;
@@ -50,20 +60,24 @@ export const Logo = styled.div`
 
 
 export const Span = styled.span`
-	margin-top: 15px;
-	max-width: 600px;
+	margin: 20px auto;
+	max-width: 280px;
 	display: block;
 	height: 1px;
 	background-color: ${({ theme }) => theme.colors.grey8};
 	mix-blend-mode: normal;
 
+	${breakpoint.sm} {
+		max-width: 550px;
+	}
+
 	${breakpoint.md} {
-		margin-top: 0px;
-		max-width: 1000px;
+		margin: 0px auto;
+		max-width: 1020px;
 	}
 
 	${breakpoint.lg} {
-		max-width: 1240px;
+		max-width: 1300px;
 	}
 
 	${breakpoint.xl} {
@@ -78,13 +92,19 @@ export const WrapperLinkSocial = styled.div`
 	flex-direction: column;
 	gap: 10px; 
 
+	${breakpoint.md} {
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;	
+	}
+
 	${breakpoint.lg} {
 		margin: 10px 45px 10px 10px;
 		max-width: 1360px;
 		max-height: 80px;
 		flex-direction: row;
 		justify-content: space-between; 
-	}
+	} 
 `;
 
 
@@ -125,6 +145,7 @@ export const WrapperSocial = styled.div`
 
 
 export const LinkYellow = styled.a`
+margin: 10px auto;
 	font-family: ${({ theme }) => theme.font1};
 	font-style: normal;
 	font-weight: 400;
@@ -147,32 +168,37 @@ export const LinkWhite = styled(LinkYellow)`
 
 
 export const Link = styled.ul`
-    padding: 51px;
+    margin: 20px auto;
+	padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: start;
-	margin-top: 20px;
+	justify-content: center;
 	list-style-type: none;
-	gap: ${({ theme }) => theme.gap.md}  
+	gap: 25px; 
+
+
+	${breakpoint.sm} {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 50px;   
 	}
-	
 
 	${breakpoint.md} {
-		padding: 5px;
 		flex-wrap: wrap;
+		justify-content: start;
 		gap: 50px;   
 	}
 
 	${breakpoint.lg} {
 		gap: 55px;   
-	}
-	}
+	}	
 `;
 
 
 export const WrapperWelcome = styled.div`
-	margin: 10px 45px 10px 10px;
+	padding: 15px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -184,43 +210,48 @@ export const WrapperWelcome = styled.div`
 	}
 
 	${breakpoint.lg} {
+		margin: 10px 45px 10px 10px;
 		max-width: 1440px;
 		max-height: 810px;	
 	}
 
 	h1{ 
-		margin: 30px 0px 10px 25px;
+		margin: 0 auto;
 		text-align: center;
 		font-family: ${({ theme }) => theme.font2};
 		font-style: normal;
 		font-weight: 400;
-		font-size: 50px;
-		line-height: 75px;
+		font-size: 46px;
+		line-height: 76px;
 		letter-spacing: 0.2px;
 		color: ${({ theme }) => theme.colors.white};
 		
 		${breakpoint.md} {
-			text-align: center;
-			margin: 10px 0px 10px 10px;
-			font-size: 86px;
-			line-height: 110px;
+			margin: 80px 0px 0px 0px;
+			font-size: 78px;
+			line-height: 80px;
 		}
 
 		${breakpoint.lg} {
 			text-align: start;
 			margin: 100px 0px 10px 25px;
-			font-size: 92px;
+			font-size: 100px;
+			line-height: 110px;
 		}
 
 		${breakpoint.xl} {
-			margin: 150px 0px 10px 25px;
+			margin: 150px 0px 10px 65px;
 			font-size: 100px;
+			line-height: 110px;
 		}  
 		}
 
 	h2{
+		padding: 15px;
+		text-align: center;
+		margin: 0 auto;
 		margin-top: 20px;
-		max-width: 600px;
+		max-width: 300px;
 		font-family: ${({ theme }) => theme.font1};
 		font-style: normal;
 		font-weight: 400;
@@ -229,11 +260,23 @@ export const WrapperWelcome = styled.div`
 		letter-spacing: 0.2px;
 		color: ${({ theme }) => theme.colors.white};
 
+		${breakpoint.sm} {
+			max-width: 472px;
+		}
+		${breakpoint.md} {
+			max-width: 500px;
+		}
 		${breakpoint.lg} {
+			max-width: 600px;
+			padding: 0 auto;
 			text-align: start;
 			margin-top: 0px;
 			margin: 40px 0px 10px 25px;
 		}
+		${breakpoint.xl} {
+			margin: 40px 0px 10px 63px;
+			max-width: 600px;
+		} 
 	}
 `;
 
@@ -241,6 +284,7 @@ export const WrapperWelcome = styled.div`
 export const WrapperTitle = styled.div`
 	margin: 0; 
 	max-width: 665px;
+	min-height: 418px;
 	
 `;
 
@@ -248,22 +292,39 @@ export const WrapperTitle = styled.div`
 export const WrapperImg = styled.div`
 	margin-top: 55px;
 	margin: 0; 
-	max-width: 320px;
-	max-height: 600px;
 		img {
-			width: 320px;
-			max-height: 612px;	
+			width: 100%;	
 		}
 
-	${breakpoint.lg} {
-		margin-top: 0px;
-		max-width: 645px;
-		max-height: 700px;
-		img {
-			width: 595px;
-			max-height: 612px;	
+		${breakpoint.md} {
+			margin-top: 60px;
+			max-width: 425px;
+			max-height: 600px;
+			img {
+				width: 595px;
+				max-height: 612px;	
+			}
 		}
-	}
+
+		${breakpoint.lg} {
+			margin-top: 40px;
+			max-width: 620px;
+			max-height: 700px;
+			img {
+				width: 620px;
+				max-height: 700px;	
+			}
+		}
+
+		${breakpoint.xl} {
+			margin-top: 60px;
+			max-width: 645px;
+			max-height: 700px;
+			img {
+				width: 645px;
+				max-height: 700px;	
+			}
+		}	
 	}
 `;
 

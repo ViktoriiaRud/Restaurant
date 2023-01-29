@@ -25,7 +25,6 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.white};
     cursor: pointer;
     &:hover {
-      
         background-color: #CD853F;
         color: #FFFFFF;
         }
@@ -43,15 +42,22 @@ export const ButtonOrange = styled(Button)`
 
 
 export const ButtonTitle = styled(Button)`
-    margin: 23px 0px 14px 39px;
+    display: block;
+    margin: 23px auto;
     background: ${({ theme }) => theme.colors.grey}; 
     width: 230px; 
     color: ${({ theme }) => theme.colors.yellow}; 
     
     ${breakpoint.md} {
-        margin: 30px 0px 14px 39px;
         width: 255px; 
+    }
+    ${breakpoint.lg} {
+        margin: 0px 0px 14px 39px;   
     } 
+
+    ${breakpoint.xl} {
+        margin: 60px 0px 14px 76px;  
+    }
 `;
 
 
@@ -74,7 +80,6 @@ export const ButtonPopular = styled(Button)`
     width: 255px; 
     color: ${({ theme }) => theme.colors.yellow};
 `;
-
 
 
 export const ButtonView = styled(Button)`
