@@ -34,6 +34,7 @@ export const WrapperLogo = styled.div`
 		max-width: 1360px;
 		gap: 122px;
 	}
+
 	${breakpoint.xl} {
 		margin: 0px auto;
 		max-width: 1460px;
@@ -126,8 +127,6 @@ export const WrapperSocial = styled.div`
 	justify-content: end;
 	gap: ${({ theme }) => theme.gap.sm};
 
-
-
 	${breakpoint.sm} {
 		margin-top: 0px;
 		margin: 20px 90px 10px 10px;
@@ -145,7 +144,7 @@ export const WrapperSocial = styled.div`
 
 
 export const LinkYellow = styled.a`
-margin: 10px auto;
+	margin: 10px auto;
 	font-family: ${({ theme }) => theme.font1};
 	font-style: normal;
 	font-weight: 400;
@@ -157,8 +156,6 @@ margin: 10px auto;
 	&:hover {
         color: ${({ theme }) => theme.colors.yellow};
         }
- 
-
 `;
 
 
@@ -176,7 +173,6 @@ export const Link = styled.ul`
 	justify-content: center;
 	list-style-type: none;
 	gap: 25px; 
-
 
 	${breakpoint.sm} {
 		flex-wrap: wrap;
@@ -275,7 +271,6 @@ export const WrapperWelcome = styled.div`
 		}
 		${breakpoint.xl} {
 			margin: 40px 0px 10px 63px;
-			max-width: 600px;
 		} 
 	}
 `;
@@ -284,8 +279,7 @@ export const WrapperWelcome = styled.div`
 export const WrapperTitle = styled.div`
 	margin: 0; 
 	max-width: 665px;
-	min-height: 418px;
-	
+	min-height: 418px;	
 `;
 
 

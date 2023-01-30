@@ -3,43 +3,45 @@ import { breakpoint } from '../../../theme';
 
 
 export const WrapperLocate = styled.section`
-    padding: 75px 0px 10px 26px;
+    margin: 0 auto;
     max-width: 320px;
 
     ${breakpoint.md} {
-        max-width: 578px;
+        max-width: 768px;
     }
 
     ${breakpoint.lg} {
-        padding: 75px 0px 10px 26px;
+        padding: 5px 0px 10px 26px;
         max-width: 1440px;
-        min-height: 300px;
     }
 `;
 
 
 export const LocateCard = styled.div`
-    margin-top: 45px;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     ${breakpoint.md} {
-        justify-content: space-between;
-        flex-direction: row;
+        margin: 40px auto;
+        flex-direction: column;
     }
 
    ${breakpoint.lg} {
+        margin-top: 45px;
+        flex-direction: row;
         justify-content: space-between;
+        flex-wrap: none;
         flex-direction: row;
     }
 `;
 
 
 export const LocateItem = styled.div`
-    max-width: 440px;
     min-height: 83px;
     img {
+        display: block;
+        margin: 0 auto;
         width: 83px;
         height: 83px;
     }
@@ -48,19 +50,38 @@ export const LocateItem = styled.div`
         flex-direction: column;
         justify-content: start;
         flex-wrap: wrap;
+        gap: 20px;
 
         ${breakpoint.lg} {
             display: flex;
-            flex-direction: row;
+            flex-direction: row; 
         }
     }
-    
+
+    ${breakpoint.md} {
+        img {
+            display: block;
+            margin: 0px auto;
+            width: 83px;
+            height: 83px;
+        }
+    }
+
+    ${breakpoint.lg} {
+        img {
+            display: block;
+            margin: 0px -20px -15px 0px;
+            width: 83px;
+            height: 83px;
+        }
+    }
+
     h3 {
         text-align: center;
 
         ${breakpoint.lg} {
             text-align: start;
-            padding: 10px 62px 0px 10px;
+            padding: 10px 6px 0px 10px;
             float: right;
             width: 250px;
         }
@@ -71,12 +92,13 @@ export const LocateItem = styled.div`
         float: right;
         
         ${breakpoint.md} {
-            text-align: start;
+            text-align: center;
             padding: 0px 12px 5px 7px;
             margin: 20px 0px 10px 0px;
         }
 
         ${breakpoint.lg} {
+            text-align: start;
             padding: 0px 12px 5px 75px;
             margin: -29px 7px 29px 19px;
         }
@@ -85,29 +107,51 @@ export const LocateItem = styled.div`
 
 
 export const WrapperStory = styled.div`
-    max-width: 1440px;
+    max-width: 320px;
     min-height: 728px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+
+    ${breakpoint.md} {
+        max-width: 768px;
+    }
+    ${breakpoint.lg} {
+        max-width: 1440px;
+        min-height: 728px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `;
 
 
 export const StoryPhoto = styled.div`
     padding: 30px;
     max-width: 700px;   
+
+    ${breakpoint.md} {
+        padding: 0px;
+    }
+
+    ${breakpoint.lg} {
+        padding: 30px;
+        
+    }
 `;
 
 
 export const WrapperStoryTitle = styled.div`
     padding: 20px;
-    margin-top: 50px;
     max-width: 570px;
-    min-height: 200px;
-    
+
     ${breakpoint.md} {
         padding: 0px;
+        margin-top: 50px;
+        min-height: 200px;
     }
 `;
 
@@ -134,14 +178,19 @@ export const DataCard = styled.div`
 
 
 export const Autograph = styled.div`
+    margin: 0 auto;
     padding: 15px;
     max-width: 274px;
     min-height: 156px;
     img {
-        margin-top: 20px;
+        margin-top: 0px auto;
     }
 
     ${breakpoint.lg} {
+        margin: 5px;
         padding: 0px;
+        img {
+            margin-top: 20px;
+        }
     }
 `;
