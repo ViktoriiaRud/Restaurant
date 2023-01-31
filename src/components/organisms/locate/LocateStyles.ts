@@ -11,8 +11,10 @@ export const WrapperLocate = styled.section`
     }
 
     ${breakpoint.lg} {
+        margin-top: 70px;
         padding: 5px 0px 10px 26px;
         max-width: 1440px;
+        
     }
 `;
 
@@ -118,7 +120,9 @@ export const WrapperStory = styled.div`
     ${breakpoint.md} {
         max-width: 768px;
     }
+
     ${breakpoint.lg} {
+        margin-top: 90px;
         max-width: 1440px;
         min-height: 728px;
         display: flex;

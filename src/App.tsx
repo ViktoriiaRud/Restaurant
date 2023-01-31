@@ -23,7 +23,7 @@ import { footerData } from './components/organisms/footer/FooterData';
 function App() {
   return (
     <div className="App">
-      {/* <HeaderRestaurant {...headerRestaurantData} /> */}
+      <HeaderRestaurant {...headerRestaurantData} />
       <Locate {...locateData} />
       <Menu {...menuData} />
       <Testimonial {...testimonialData} />

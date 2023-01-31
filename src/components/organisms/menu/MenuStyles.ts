@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { breakpoint } from "../../../theme";
 
 export const WrapperMenu = styled.section`
+    margin: 0 auto;
     padding: 10px;
     max-width: 310px;
     .flex-menu {
@@ -9,6 +10,7 @@ export const WrapperMenu = styled.section`
         display: flex;
         flex-direction: column;
     }
+
 
 	${breakpoint.lg} {
         padding: 30px;
@@ -22,8 +24,6 @@ export const WrapperMenu = styled.section`
             justify-content: start;
             gap: 50px;
         }
-	}
-
 `;
 
 
@@ -173,7 +173,7 @@ export const WrapperImg = styled.div`
 
 
 export const WrapperText = styled.div`
-padding: 21px 9px 4px 11px;
+    padding: 21px 9px 4px 11px;
 
     ${breakpoint.lg} {
         position: relative;
