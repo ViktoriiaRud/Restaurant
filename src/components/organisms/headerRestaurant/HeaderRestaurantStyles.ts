@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import { breakpoint } from '../../../theme/breakpoints';
-import { theme } from '../../../theme/theme';
+import {breakpoint} from "../../../theme";
 
-
-export const WrapperBanner = styled.section`
+export const StyledWrapperColorHeader = styled.section`
 	background-color: ${({ theme }) => theme.colors.grey};
-	
+	width: 100%;
+`;
+export const WrapperBanner = styled.section`
 	${breakpoint.lg} {
 		min-height: 790px;
 	}
 `;
-
 
 export const WrapperLogo = styled.div`
 	padding: 5px 5px;
@@ -29,23 +28,20 @@ export const WrapperLogo = styled.div`
 	}
 
 	${breakpoint.lg} {
-		margin: 0px 0px 22px 0px;
+		margin: 0 0 22px 0;
 		padding: 20px 30px;
 		max-width: 1360px;
 		gap: 122px;
 	}
 
 	${breakpoint.xl} {
-		margin: 0px auto;
+		margin: 0 auto;
 		max-width: 1460px;
 	}
 `;
 
-
 export const Logo = styled.div`
-	margin: 0 auto;
-	margin-top: 20px;
-	margin-top: 30px;
+	margin: 30px auto;
 	max-width: 259px;
 	max-height: 188px;
 
@@ -54,11 +50,10 @@ export const Logo = styled.div`
 	}
 
 	${breakpoint.lg} {
-		margin-top: 0px;
+		margin-top: 0;
 		max-width: 378px;
 	}
 `;
-
 
 export const Span = styled.span`
 	margin: 20px auto;
@@ -73,7 +68,7 @@ export const Span = styled.span`
 	}
 
 	${breakpoint.md} {
-		margin: 0px auto;
+		margin: 0 auto;
 		max-width: 1020px;
 	}
 
@@ -108,19 +103,16 @@ export const WrapperLinkSocial = styled.div`
 	} 
 `;
 
-
 export const WrapperLink = styled.div`
-
 	${breakpoint.lg} {
+		width: 100%;
 		max-width: 796px;
 		max-height: 70px;
 	}
 `;
 
-
 export const WrapperSocial = styled.div`
-    margin: 0 auto;
-	margin-top: 20px;
+    margin: 20px auto;
 	max-height: 30px;
 	display: flex;
 	flex-direction: row;
@@ -128,7 +120,6 @@ export const WrapperSocial = styled.div`
 	gap: ${({ theme }) => theme.gap.sm};
 
 	${breakpoint.sm} {
-		margin-top: 0px;
 		margin: 20px 90px 10px 10px;
 	}
 
@@ -138,10 +129,8 @@ export const WrapperSocial = styled.div`
 
 	${breakpoint.lg} {
 		margin: 20px 55px 10px 10px;
-
 	}
 `;
-
 
 export const LinkYellow = styled.a`
 	margin: 10px auto;
@@ -153,16 +142,15 @@ export const LinkYellow = styled.a`
 	letter-spacing: 0.2px;
 	text-decoration: none;
 	color: ${({ theme }) => theme.colors.white};
+	
 	&:hover {
         color: ${({ theme }) => theme.colors.yellow};
-        }
+    }
 `;
-
 
 export const LinkWhite = styled(LinkYellow)`
 	color: #FFFFFF;
 `;
-
 
 export const Link = styled.ul`
     margin: 20px auto;
@@ -191,7 +179,6 @@ export const Link = styled.ul`
 	}	
 `;
 
-
 export const WrapperWelcome = styled.div`
 	padding: 15px;
 	margin: 0 auto;
@@ -202,79 +189,78 @@ export const WrapperWelcome = styled.div`
 	${breakpoint.md} {
 		max-width: 1240px;
 		flex-direction: row;
-		justify-content: space-between;	
+		justify-content: space-between;
 	}
 
 	${breakpoint.lg} {
 		margin: 10px 45px 10px 10px;
 		max-width: 1440px;
-		max-height: 810px;	
+		max-height: 810px;
 	}
 
-	h1{ 
+	h1 {
 		margin: 0 auto;
 		text-align: center;
-		font-family: ${({ theme }) => theme.font2};
+		font-family: ${({theme}) => theme.font2};
 		font-style: normal;
 		font-weight: 400;
 		font-size: 46px;
 		line-height: 76px;
 		letter-spacing: 0.2px;
-		color: ${({ theme }) => theme.colors.white};
-		
+		color: ${({theme}) => theme.colors.white};
+
 		${breakpoint.md} {
-			margin: 80px 0px 0px 0px;
+			margin: 80px 0 0 0;
 			font-size: 78px;
 			line-height: 80px;
 		}
 
 		${breakpoint.lg} {
 			text-align: start;
-			margin: 100px 0px 10px 25px;
+			margin: 100px 0 10px 25px;
 			font-size: 100px;
 			line-height: 110px;
 		}
 
 		${breakpoint.xl} {
-			margin: 150px 0px 10px 65px;
+			margin: 150px 0 10px 65px;
 			font-size: 100px;
 			line-height: 110px;
-		}  
 		}
+	}
 
-	h2{
+	h2 {
 		padding: 15px;
 		text-align: center;
-		margin: 0 auto;
-		margin-top: 20px;
+		margin: 20px auto;
 		max-width: 300px;
-		font-family: ${({ theme }) => theme.font1};
+		font-family: ${({theme}) => theme.font1};
 		font-style: normal;
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 30px;
 		letter-spacing: 0.2px;
-		color: ${({ theme }) => theme.colors.white};
+		color: ${({theme}) => theme.colors.white};
 
 		${breakpoint.sm} {
 			max-width: 472px;
 		}
+
 		${breakpoint.md} {
 			max-width: 500px;
 		}
+
 		${breakpoint.lg} {
 			max-width: 600px;
-			padding: 0 auto;
 			text-align: start;
-			margin-top: 0px;
-			margin: 40px 0px 10px 25px;
+			margin: 40px 0 10px 25px;
 		}
+		
 		${breakpoint.xl} {
-			margin: 40px 0px 10px 63px;
-		} 
+			margin: 40px 0 10px 63px;
+		}
 	}
 `;
-
 
 export const WrapperTitle = styled.div`
 	margin: 0; 
@@ -282,10 +268,9 @@ export const WrapperTitle = styled.div`
 	min-height: 418px;	
 `;
 
-
 export const WrapperImg = styled.div`
 	margin-top: 55px;
-	margin: 0; 
+	
 		img {
 			width: 100%;	
 		}
@@ -294,6 +279,7 @@ export const WrapperImg = styled.div`
 			margin-top: 60px;
 			max-width: 425px;
 			max-height: 600px;
+			
 			img {
 				width: 595px;
 				max-height: 612px;	
@@ -304,6 +290,7 @@ export const WrapperImg = styled.div`
 			margin-top: 40px;
 			max-width: 620px;
 			max-height: 700px;
+			
 			img {
 				width: 620px;
 				max-height: 700px;	
@@ -314,6 +301,7 @@ export const WrapperImg = styled.div`
 			margin-top: 60px;
 			max-width: 645px;
 			max-height: 700px;
+			
 			img {
 				width: 645px;
 				max-height: 700px;	
@@ -321,4 +309,3 @@ export const WrapperImg = styled.div`
 		}	
 	}
 `;
-
