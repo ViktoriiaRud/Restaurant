@@ -4,7 +4,7 @@ import { breakpoint } from '../../../theme';
 
 export const TitleStory = styled.div` 
     text-align: center;
-    font-family: 'Cormorant Infant';
+    font-family: 'Cormorant Infant', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -122,7 +122,7 @@ export const TestDescription = styled.div`
 `;
 
 
-export const OffersSubtitle = styled.div` 
+export const OffersSubtitle = styled.div`
     font-family: ${({ theme }) => theme.font1};
     font-style: normal;
     font-weight: 400;

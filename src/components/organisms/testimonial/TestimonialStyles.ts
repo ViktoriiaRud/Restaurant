@@ -1,18 +1,12 @@
 import styled from "styled-components";
 
-
 export const WrapperColor = styled.section`
-    background-color: ${({ theme }) => theme.colors.grey};
+    background-color: ${({theme}) => theme.colors.grey};
 `;
-
 
 export const WrapperTestimonial = styled.div`
     max-width: 1440px;
-    min-height: 1506px;
-    display: flex;
-    flex-direction: column;
 `;
-
 
 export const TestimonialCard = styled.div`
     padding: 50px;
@@ -20,22 +14,22 @@ export const TestimonialCard = styled.div`
     min-height: 906px;
 `;
 
-
 export const TestimonialImg = styled.div`
-    max-width: 1440px;
+    position: relative;
+    width: 100%;
     min-height: 600px;
+
     img {
+        position: absolute;
         min-height: 600px;
+        width: 100%;
+        object-fit: cover;
     }
-
 `;
-
 
 export const Span = styled.div`
-    margin: 0px 0px 8px 0px;
+    margin: 0 0 8px 0;
     max-width: 141px;
     min-height: 1px;
-    background-color: ${({ theme }) => theme.colors.yellow};
+    background-color: ${({theme}) => theme.colors.yellow};
 `;
-
-

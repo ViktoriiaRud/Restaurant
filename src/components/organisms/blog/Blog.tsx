@@ -1,21 +1,24 @@
 import React from 'react';
+import Container from "../../atoms/container";
 import GlobalStyle from '../../../theme/globalStyles';
-import { theme } from '../../../theme/theme';
+import {theme} from "../../../theme";
 import { ThemeProvider } from 'styled-components';
 import { blogDataType } from './BlogData';
 import { WrapperBlog } from './BlogStyles';
 import { SpanUp, Span } from './BlogStyles';
-import { OffersSubtitle, OffersTitle, OffersDescription, OffersDescription2 } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
-import { Button } from 'react-bootstrap';
+import { OffersSubtitle, OffersTitle, OffersDescription, OffersDescription2 } from '../../atoms/titleSubtitle/TitleSubtitleStyles';
 import { WrapperCards, WrapperText, Card, WrapperImg } from './BlogStyles';
-import { ButtonView } from './../../atoms/button/ButtonStyled';
+import { ButtonView } from '../../atoms/button/ButtonStyled';
 import { BlogDataSpan, BlogDataSpanUp, SpanBlog, SpanBlogUp, Grid } from './BlogStyles';
-import { BlogDescription, BlogTitle, BlogData, BlogSubtitle, } from './../../atoms/titleSubtitle/TitleSubtitleStyles';
+import { BlogDescription, BlogTitle, BlogData, BlogSubtitle, } from '../../atoms/titleSubtitle/TitleSubtitleStyles';
+
+
 const Blog = ({ subtitle, title, description1, description2, cards }: blogDataType) => {
 
     return <>
         <ThemeProvider theme={theme}>
             <GlobalStyle />
+        <Container>
             <WrapperBlog>
                 <SpanUp></SpanUp>
                 <OffersSubtitle>{subtitle}</OffersSubtitle>
@@ -44,16 +47,13 @@ const Blog = ({ subtitle, title, description1, description2, cards }: blogDataTy
                                 <WrapperText>
                                     <BlogTitle>{item.title}</BlogTitle>
                                     <BlogDescription>{item.description}</BlogDescription>
-
                                 </WrapperText>
-
                             </Grid>
-
                         </Card>
                     ))}
-
                 </WrapperCards>
             </WrapperBlog>
+        </Container>
         </ThemeProvider>
     </>
 }

@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import { breakpoint } from "../../../theme";
 
 export const WrapperColor = styled.footer`
     background-color: ${({ theme }) => theme.colors.grey};
 `;
-
 
 export const WrapperFooter = styled.div`
     padding: 100px 20px 10px 20px;
@@ -16,7 +14,6 @@ export const WrapperFooter = styled.div`
     gap: 10px;
 `;
 
-
 export const Contact = styled.div`
     margin-top: 100px;
     max-width: 332px;
@@ -24,7 +21,6 @@ export const Contact = styled.div`
     grid-column: 1 / 1;
     grid-row: 1 / 2;
 `;
-
 
 export const FormLogo = styled.div`
     max-width: 664px;
@@ -44,18 +40,14 @@ export const Social = styled.div`
     }
 `;
 
-
 export const Logo = styled.div`
-    margin: 0 auto;
-    margin-top: 70px;
+    margin: 70px auto;
     max-width: 378px;
     min-height: 188px;
 `;
 
 export const Form = styled.div`
-    margin-top: 20px;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 664px;
     min-height: 176px;
 `;
-

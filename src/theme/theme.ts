@@ -5,6 +5,7 @@ export const theme = {
     wrapperXs: '921px',
     wrapper: '1100px',
     wrapperXl: '1440px,',
+
     colors: {
         transparent: 'transparent',
         grey3: '#40464F',
@@ -20,8 +21,9 @@ export const theme = {
         moccasin: '#FFE4B5',
         black2: '#555555',
         grey10: '#323841',
-
+        lightPink: '#FAF5F5',
     },
+
     gap: {
         xxs: '4px',
         xs: '8px',

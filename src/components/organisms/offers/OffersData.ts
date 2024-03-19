@@ -19,7 +19,7 @@ export type offersDataType = {
 
 
 export type cardType = {
-    senna: string,
+    price: string,
     card: string,
     img: string,
     icon: string,
@@ -39,7 +39,7 @@ export const offersData: offersDataType = {
 
     items: [
         {
-            senna: "$10",
+            price: "$10",
             card: ImgBlue,
             img: ImgGamburg,
             icon: ImgWhite,
@@ -50,7 +50,7 @@ export const offersData: offersDataType = {
         },
 
         {
-            senna: "$9",
+            price: "$9",
             card: ImgGrey,
             img: ImgPizza,
             icon: ImgBlack,

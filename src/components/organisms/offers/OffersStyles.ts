@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-
 export const WrapperOffers = styled.section`
     margin-top: 130px;
     max-width: 1440px;
 `;
-
 
 export const SpanUp = styled.div`
     margin: 139px 0px 10px 600px;
@@ -14,11 +12,9 @@ export const SpanUp = styled.div`
     background: ${({ theme }) => theme.colors.yellow};
 `;
 
-
 export const Span = styled(SpanUp)`
     margin: 3px 20px 50px 600px;
 `;
-
 
 export const WrapperCards = styled.div`
     padding: 20px;
@@ -29,6 +25,7 @@ export const WrapperCards = styled.div`
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
+    
     h6 {
         font-family: ${({ theme }) => theme.font2};
         font-style: normal;
@@ -40,11 +37,11 @@ export const WrapperCards = styled.div`
     }
 `;
 
-
 export const Card = styled.div`
     margin-top: 0px;
     max-width: 665px;
     height: 409px;
+    
     .img-card {
         position: relative;
     }
@@ -59,7 +56,7 @@ export const Card = styled.div`
         }
     }
 
-    .senna {
+    .price {
         position:absolute;
         margin: -315px 10px 10px 39px;
         z-index: 0;
@@ -67,7 +64,7 @@ export const Card = styled.div`
         height: 104px;    
     }
 
-    .senna-bg {
+    .price-bg {
         position:absolute;
         margin: -310px 12px 30px 33px;
         z-index: 0;
@@ -75,13 +72,13 @@ export const Card = styled.div`
         height: 104px; 
     }
 
-    .senna-dollar {
+    .price-dollar {
         position:absolute;
-        margin: -300px 0px 20px 78px;
+        margin: -300px 0 20px 78px;
         z-index: 0; 
     }
 
-    .text-senna {
+    .text-price {
         position:absolute;
         margin: -210px 12px 20px 25px;
         z-index: 0;
@@ -90,16 +87,13 @@ export const Card = styled.div`
     }
 `;
 
-
 export const SpanUpSub = styled.div`
-    margin: 5px 0px 1px 0px;
+    margin: 5px 0 1px 0;
     width: 210px;
     height: 1px;
     z-index: 0;
     background: ${({ theme }) => theme.colors.salmon};
 `;
 
-
 export const SpanSub = styled(SpanUpSub)`
 `;
-
